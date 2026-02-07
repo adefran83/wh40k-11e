@@ -2734,10 +2734,6 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                           </entryLinks>
                         </entryLink>
                       </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9c9-f984-3961-e94a"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93d8-0caf-d85a-0206"/>
-                      </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Dreadnought combat weapon and heavy flamer" hidden="false" id="51bf-1a74-29be-db46">
                       <entryLinks>
@@ -2760,10 +2756,6 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                           </entryLinks>
                         </entryLink>
                       </entryLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6ca-0be6-b979-776b"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88bf-b584-5282-6cab"/>
-                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -2774,12 +2766,6 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                   </constraints>
                   <entryLinks>
                     <entryLink import="true" name="Assault Cannon" hidden="false" id="33f4-4eeb-a8e5-d7c3" type="selectionEntry" targetId="2de6-ff2-dc37-b20d">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83b1-bc1d-ebaf-23da"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="0" field="83b1-bc1d-ebaf-23da" id="e844-c4a-7d19-4189"/>
-                      </modifiers>
                       <entryLinks>
                         <entryLink import="true" name="Weapon Modifications" hidden="false" id="b9a4-12e9-8816-3292" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
                       </entryLinks>
