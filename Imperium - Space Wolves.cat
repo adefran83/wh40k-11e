@@ -2664,9 +2664,6 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
         <selectionEntryGroup name="Wargear" hidden="false" id="b4ba-16da-c13e-24c5" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Fenrisian great axe and blizzard shield" hidden="false" id="3d97-4e47-c2be-1ce7">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a7c-ca12-78fd-7dd0"/>
-              </constraints>
               <entryLinks>
                 <entryLink import="true" name="Fenrisian great axe" hidden="false" type="selectionEntry" id="4e67-1d27-4a-a1a1" targetId="521e-49ea-127-edb9">
                   <constraints>
@@ -2703,9 +2700,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Dreadnought combat weapon + ranged weapon" id="03b9-b706-2ede-0b9e" hidden="false">
+            <selectionEntry type="upgrade" import="true" name="Dreadnought combat weapon + ranged weapon" hidden="false" id="8d8d-c082-fdab-a1e4">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Dreadnought combat weapon + wrist weapon" id="bcf8-9061-86a6-b64" hidden="false">
                   <constraints>
@@ -2812,8 +2807,8 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84c5-7f03-94f8-b002"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc4e-4b43-71c3-7bde"/>
