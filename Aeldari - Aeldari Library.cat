@@ -28185,6 +28185,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <modifier type="append" value="7&quot;" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Battle Focus" id="a639-50dc-48ef-23c2" hidden="false" targetId="c324-e193-e23c-7d2e" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Skyreaver Felarch" hidden="false" id="d386-b15b-e9ef-40df" sortIndex="2">
