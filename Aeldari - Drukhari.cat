@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="38de-521f-1ce0-44a0" name="Xenos - Drukhari" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="38de-521f-1ce0-44a0" name="Xenos - Drukhari" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="12" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Aeldari - Aeldari Library" id="d965-4d5b-d10b-350b" targetId="dfcf-1214-b57-2205"/>
   </catalogueLinks>
@@ -46,5 +46,8 @@
     <entryLink import="true" name="Scourges with Heavy Weapons" hidden="false" id="200d-57a7-f367-4d23" type="selectionEntry" targetId="7ccd-7989-ec0d-2888"/>
     <entryLink import="true" name="Lady Malys" hidden="false" id="8d3c-cf60-0f30-feb4" type="selectionEntry" targetId="874f-76d7-de74-c8fe"/>
     <entryLink import="true" name="Hand of the Archon" hidden="false" id="a9df-df1d-48b8-bd25" type="selectionEntry" targetId="ceeb-4865-5772-efb6"/>
+    <entryLink import="true" name="Prince Yriel" hidden="false" id="f61a-41df-58cd-bbda" type="selectionEntry" targetId="1fbf-55d9-5ca8-4e9e"/>
+    <entryLink import="true" name="Kharseth" hidden="false" id="1885-8a2a-e0f2-b980" type="selectionEntry" targetId="1c60-8a72-daa3-7825"/>
+    <entryLink import="true" name="Starfangs" hidden="false" id="41c1-60a5-14e4-b541" type="selectionEntry" targetId="d84a-536b-d8e0-3658"/>
   </entryLinks>
 </catalogue>
