@@ -8591,6 +8591,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="20ed-4c9f-856d-a325" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="f50d-4ada-8e84-26ab" primary="false" name="Aeldari"/>
         <categoryLink targetId="9cf8-50f3-f6f5-ea4c" id="4289-3136-1df2-ce00" primary="false" name="Anhrathe"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="839b-5fe8-15e8-8089" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
@@ -36627,6 +36628,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
         <categoryLink targetId="9cf8-50f3-f6f5-ea4c" id="a8ad-6026-51c6-997f" primary="false" name="Anhrathe"/>
         <categoryLink targetId="4233-a613-584c-e100" id="8f6c-5cdd-d38a-e649" primary="false" name="Kharseth"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="25a9-a329-aab6-1f36" primary="false" name="Psyker"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="5278-54d3-5275-03de" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
@@ -36951,6 +36953,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
         <categoryLink targetId="9cf8-50f3-f6f5-ea4c" id="3b9a-594e-402e-4a2f" primary="false" name="Anhrathe"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="6316-5087-3309-6cac" primary="false" name="Grenades"/>
         <categoryLink targetId="6df-937-16bc-8c1a" id="4156-b0b9-2319-2607" primary="false" name="Smoke"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="3c0d-c338-827c-c68c" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="9af4-f893-e29c-b8a0" type="selectionEntryGroup" targetId="eef3-eae9-ce7c-7765" sortIndex="1"/>
