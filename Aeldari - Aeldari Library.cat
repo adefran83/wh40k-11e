@@ -41828,6 +41828,9 @@ When doing so, you can set those units up in Strategic Reserves, regardless of h
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e41d-ab90-b3b6-6a8a" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Corsair Coterie Enhancements" id="8253-488f-143d-cc70" hidden="false">
           <modifiers>
@@ -41937,6 +41940,9 @@ Lord of Deceit (Aura): Each time your opponent targets a unit from their army wi
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77a8-72a7-5352-558b" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
