@@ -28,6 +28,7 @@
     <categoryEntry id="e9f6-7bec-e0b5-9eeb" name="Kapricus Defenders" hidden="false"/>
     <categoryEntry id="ff44-b28f-9e8a-3cc9" name="Memnyr Strategist" hidden="false"/>
     <categoryEntry name="Kapricus" id="9cf1-24f6-887e-bc32" hidden="false"/>
+    <categoryEntry name="Hernkyn" id="167a-ac6b-c15c-9fe2" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="0ec6-9ba0-eef0-b5b9" name="Detachment Choice" hidden="false" collective="false" import="true" targetId="5914-3326-fac9-bf29" type="selectionEntry"/>
@@ -2469,6 +2470,7 @@ unit (and only if it is an eligible target) and, after resolving those attacks,
         <categoryLink id="fc83-8a9a-5f30-4237" name="Grenades" hidden="false" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink id="3dfb-ea1f-17c0-b749" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink id="be95-376d-a284-8c03" name="Hernkyn Pioneers" hidden="false" targetId="8b60-36d5-35a8-8a69" primary="false"/>
+        <categoryLink targetId="167a-ac6b-c15c-9fe2" id="f184-8dfd-eac4-e780" primary="false" name="Hernkyn"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6016-5c68-b821-0070" name="3 - 6 Pioneers" hidden="false" collective="false" import="true" defaultSelectionEntryId="48b1-2aa0-4098-6661">
@@ -3416,6 +3418,7 @@ the other can start the battle embarked within another TRANSPORT, or it can be 
         <categoryLink name="Infantry" hidden="false" id="dd00-d80e-eeba-c6da" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink name="Grenades" hidden="false" id="e1f0-3ee7-9b35-87f3" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Hernkyn Yaegirs" hidden="false" id="1fd8-7f1a-ace9-8572" targetId="5b17-69c0-77f9-d2f4" primary="false"/>
+        <categoryLink targetId="167a-ac6b-c15c-9fe2" id="66c1-f967-143e-60d7" primary="false" name="Hernkyn"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Hernkyn Yaegir" hidden="false" id="712c-437b-174b-a4bf" collective="false">
@@ -4717,6 +4720,7 @@ shot this phase, if one or more enemy units were destroyed by those attacks, yo
         <categoryLink targetId="c619-2086-bbcf-69c9" id="0586-c278-d488-df65" primary="false" name="Fly"/>
         <categoryLink targetId="e9f6-7bec-e0b5-9eeb" id="3f4b-619d-8d67-11a5" primary="false" name="Kapricus Defenders"/>
         <categoryLink targetId="9cf1-24f6-887e-bc32" id="20ac-91b0-b5d7-3a3d" primary="false" name="Kapricus"/>
+        <categoryLink targetId="167a-ac6b-c15c-9fe2" id="5d15-d8c2-7541-b6f7" primary="false" name="Hernkyn"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Kapricus Defender" hidden="false" id="347c-7838-e83f-c025">
@@ -4915,6 +4919,7 @@ At the start of the Declare Battle Formations step, you can select one HERNKYN 
         <categoryLink targetId="c619-2086-bbcf-69c9" id="bae6-c09d-0ec2-ac00" primary="false" name="Fly"/>
         <categoryLink targetId="63b4-7e76-fc18-cc0c" id="9f8e-7591-99d5-299a" primary="false" name="Kapricus Carrier"/>
         <categoryLink targetId="9cf1-24f6-887e-bc32" id="ede8-2c8d-ed38-e1a3" primary="false" name="Kapricus"/>
+        <categoryLink targetId="167a-ac6b-c15c-9fe2" id="b9ef-41b5-ea4e-5b37" primary="false" name="Hernkyn"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="be22-9acf-1baf-4a5d" name="Armoured hull" hidden="false" collective="false" import="true" type="upgrade">
