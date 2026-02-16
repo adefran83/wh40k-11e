@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="138" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="139" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="442c-a37c-3908-d701" name="Codex: Aeldari" shortName="C:Aeldari" publisher="Codex: Aeldari" publicationDate="08/02/2025"/>
     <publication id="1427-7c5c-863f-ac94" name="Index: Drukhari" shortName="I:Drukhari" publisher="Index: Drukhari" publicationDate="6/15/2023"/>
@@ -8611,8 +8611,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 ■ Corsair Voidreavers
-■ Corsair Voidscarred
-</characteristic>
+■ Corsair Voidscarred</characteristic>
           </characteristics>
         </profile>
         <profile name="Prince Yriel" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="1679-939b-2f47-aad">
@@ -28161,7 +28160,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="9cf8-50f3-f6f5-ea4c" id="2815-26ec-f855-99b8" primary="false" name="Anhrathe"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="7f9-f493-15d2-ebe0" primary="false" name="Fly"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="1484-9126-f892-d708" primary="false" name="Jump Pack"/>
-        <categoryLink targetId="4de0-99b0-1887-1ed6" id="cb2c-ef3e-df99-b3ee" primary="false" name="Corsair Skyreaver Band"/>
+        <categoryLink targetId="4de0-99b0-1887-1ed6" id="cb2c-ef3e-df99-b3ee" primary="false" name="Corsair Skyreavers"/>
         <categoryLink targetId="e554-d095-bb9d-c930" id="37b7-238c-5330-e3b8" primary="false" name="Corsairs and Travelling Players"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="26d7-eb27-45fb-5429" primary="false" name="Aeldari"/>
       </categoryLinks>
@@ -28377,7 +28376,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="86f8-b66a-4fa1-29a"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Corsair Skyreaver Band" hidden="false" type="profile" id="927e-8dee-aef5-7ad8" targetId="a2e7-33f9-5d08-558a"/>
+                <infoLink name="Corsair Skyreaver" hidden="false" type="profile" id="927e-8dee-aef5-7ad8" targetId="a2e7-33f9-5d08-558a"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -28429,7 +28428,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9f5-52c0-67e8-8d77"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Corsair Skyreaver Band" hidden="false" type="profile" id="2fb4-6c7c-848e-841b" targetId="a2e7-33f9-5d08-558a"/>
+                    <infoLink name="Corsair Skyreaver" hidden="false" type="profile" id="2fb4-6c7c-848e-841b" targetId="a2e7-33f9-5d08-558a"/>
                   </infoLinks>
                   <modifiers>
                     <modifier type="increment" value="1" field="e9f5-52c0-67e8-8d77">
@@ -28481,7 +28480,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bacc-3eab-7565-6f87"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Corsair Skyreaver Band" hidden="false" type="profile" id="26c3-fab3-d5da-906a" targetId="a2e7-33f9-5d08-558a"/>
+                    <infoLink name="Corsair Skyreaver" hidden="false" type="profile" id="26c3-fab3-d5da-906a" targetId="a2e7-33f9-5d08-558a"/>
                   </infoLinks>
                   <modifiers>
                     <modifier type="increment" value="1" field="bacc-3eab-7565-6f87">
@@ -28533,7 +28532,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b14-ae43-e5be-e60a"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Corsair Skyreaver Band" hidden="false" type="profile" id="1193-1b-442e-a70b" targetId="a2e7-33f9-5d08-558a"/>
+                    <infoLink name="Corsair Skyreaver" hidden="false" type="profile" id="1193-1b-442e-a70b" targetId="a2e7-33f9-5d08-558a"/>
                   </infoLinks>
                   <modifiers>
                     <modifier type="increment" value="1" field="3b14-ae43-e5be-e60a">
@@ -28585,7 +28584,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d6e-c2ff-d97b-d87f"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Corsair Skyreaver Band" hidden="false" type="profile" id="617b-9cf7-ac5f-d089" targetId="a2e7-33f9-5d08-558a"/>
+                    <infoLink name="Corsair Skyreaver" hidden="false" type="profile" id="617b-9cf7-ac5f-d089" targetId="a2e7-33f9-5d08-558a"/>
                   </infoLinks>
                   <modifiers>
                     <modifier type="increment" value="1" field="4d6e-c2ff-d97b-d87f">
@@ -36475,7 +36474,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                       <profiles>
                         <profile name="Phantasm Grenade Launcher" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f22a-1167-7b8f-06d9">
                           <characteristics>
-                            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer’s unit has the SMOKE and GRENADES keywords.</characteristic>
+                            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer’s unit has the SMOKE keyword.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -36648,8 +36647,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
 ■ Corsair Voidreavers
-■ Corsair Voidscarred
-</characteristic>
+■ Corsair Voidscarred</characteristic>
           </characteristics>
         </profile>
         <profile name="Kharseth" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c67e-82c0-3ff4-c199">
