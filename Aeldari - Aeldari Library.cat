@@ -20882,13 +20882,13 @@ Aethersails: While one or more DRUKHARI units are embarked within this model, yo
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="1140-d43a-69a5-8f7c" hidden="false" sortIndex="4">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Succubus weapons" hidden="false" id="1efd-c2ce-456e-b966">
+            <selectionEntry type="upgrade" import="true" name="Archite glaive and agonizer" hidden="false" id="1efd-c2ce-456e-b966">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc9-a816-f490-53ba-min"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc9-a816-f490-53ba-max"/>
               </constraints>
               <profiles>
-                <profile name="Succubus Weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a1-9b51-c386-5786">
+                <profile name="Archite glaive and agonizer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="a1-9b51-c386-5786">
                   <characteristics>
                     <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
                     <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
@@ -20909,66 +20909,6 @@ Aethersails: While one or more DRUKHARI units are embarked within this model, yo
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Pistol Choice" id="6398-ea2c-e85c-33be" hidden="false" defaultSelectionEntryId="e6ee-907c-8ecc-49a3">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Splinter Pistol" hidden="false" id="5176-27df-f069-9aa1">
-                  <profiles>
-                    <profile name="Splinter Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a333-2e47-dc8-2c1">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 3+, Assault, Pistol</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Anti-" id="1761-b064-416c-5c68" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
-                    <infoLink name="Assault" id="97db-905a-1d4b-b116" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                    <infoLink name="Pistol" id="5b83-6c2b-eef3-5d8d" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="714a-ba66-5eb9-7810" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Blast Pistol" hidden="false" id="706c-89a9-66d-600">
-                  <profiles>
-                    <profile name="Blast Pistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="860d-fc0d-aea5-c36d">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-                      </characteristics>
-                      <modifiers>
-                        <modifier type="append" value="+0" field="a354-c1c8-a745-f9e3" join="">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="self" childId="584b-5fa7-a3c3-942e" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Pistol" id="748e-33d4-8319-accb" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="db15-439c-6efc-5f77" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1130-f772-2ecc-3f1a"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
