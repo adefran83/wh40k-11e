@@ -15776,7 +15776,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Ri&apos;Lantar" hidden="false" id="04a0-371d-7e8c-77ea">
+        <selectionEntry type="model" import="true" name="Ri&apos;Lantar" hidden="false" id="04a0-371d-7e8c-77ea">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Fusion eliminator" hidden="false" id="53c6-e7ea-824d-a0e7">
               <profiles>
@@ -15892,7 +15892,7 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ri&apos;Locai" hidden="false" id="95c7-dfe3-5a3d-ccbd">
+        <selectionEntry type="model" import="true" name="Ri&apos;Locai" hidden="false" id="95c7-dfe3-5a3d-ccbd">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="XV Pulse Pistol" hidden="false" id="006f-f9cd-5a66-1652">
               <profiles>
