@@ -1974,9 +1974,7 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                 <entryLink import="true" name="Weapon Modifications" hidden="false" id="0e2e-2835-bd33-e81f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
               </entryLinks>
             </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Blizzard shield" hidden="false" type="selectionEntry" id="e49d-8428-8127-abac" targetId="d837-153d-f6ae-2a87">
+            <selectionEntry type="upgrade" import="true" name="Blizzard Shield" hidden="false" id="6650-c6dd-8c6d-4f7f">
               <selectionEntryGroups>
                 <selectionEntryGroup name="Ranged weapon" id="3a8f-0ef8-3fc9-a7bc" hidden="false" defaultSelectionEntryId="a538-2b9e-731a-e45f">
                   <constraints>
@@ -1999,7 +1997,12 @@ While a unit is stormwracked, subtract 6&quot; from the Range characteristic of
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-            </entryLink>
+              <entryLinks>
+                <entryLink import="true" name="Blizzard shield" hidden="false" id="e49d-8428-8127-abac" type="selectionEntry" targetId="d837-153d-f6ae-2a87"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
             <entryLink import="true" name="Fenrisian great axe" hidden="false" type="selectionEntry" id="52a5-c5e9-e304-aa59" targetId="521e-49ea-127-edb9">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7872-6fb4-3e61-48b0"/>
