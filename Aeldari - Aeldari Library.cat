@@ -36812,15 +36812,15 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3e7-2eeb-c13c-fc76"/>
                   </constraints>
                   <profiles>
-                    <profile name="Disintegrator cannon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="35cd-fb3b-2acc-fc73">
+                    <profile name="Disintegrator cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="35cd-fb3b-2acc-fc73">
                       <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Assault</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -36837,15 +36837,15 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="559c-81c5-aa05-b523"/>
                   </constraints>
                   <profiles>
-                    <profile name="Starfang grenade launcher" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="13f3-20a3-a8ad-491d">
+                    <profile name="Starfang grenade launcher" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="13f3-20a3-a8ad-491d">
                       <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">D3</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Assault, Blast</characteristic>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Blast</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -41965,7 +41965,7 @@ No ^^Harlequins^^ or ^^Anhrathe^^ models included in your army in this way can 
         <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
         <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
         <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
