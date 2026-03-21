@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="176" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c8da-e875-58f7-f6d6" name="Chaos - Chaos Space Marines" revision="171" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <profileTypes>
     <profileType id="3084-68b8-1d20-2f26" name="Marks of Chaos">
       <characteristicTypes>
@@ -28615,34 +28615,34 @@ This unit cannot join an Attached unit, and only Huron Blackheart can join a uni
         <infoLink name="Dark Pacts" id="c56f-1c77-1ef2-fad6" hidden="false" type="rule" targetId="fd69-68cc-5d63-c84d"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="4 - 9 Raiders" id="d015-a849-0fbc-a02b" hidden="false" defaultSelectionEntryId="5f90-d7a1-b5b4-68c5">
+        <selectionEntryGroup name="4 - 9 Raiders" id="adfb-e415-d0f9-a51f" hidden="false" defaultSelectionEntryId="5f90-d7a1-b5b4-68c5" sortIndex="4">
           <constraints>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0fef-fc32-7d8e-6865" includeChildSelections="false"/>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="80b6-4367-4fe1-4839" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="885f-55cd-48a9-7d98" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="d313-56ea-bf1a-661d" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Red Corsairs Raider" hidden="false" id="40dc-2c63-edb1-1f7d">
+            <selectionEntry type="model" import="true" name="Red Corsairs Raider" hidden="false" id="5f90-d7a1-b5b4-68c5">
               <constraints>
-                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="9277-3249-7671-43a2" includeChildSelections="false" automatic="true"/>
-                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="577f-0e77-1b9b-7dc1" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="7afe-4d3d-d23d-1f9b" includeChildSelections="false" automatic="true"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f1df-5054-fcdc-12e0" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Boltgun" hidden="false" id="ead6-943d-260c-ab17" type="selectionEntry" targetId="b27c-673f-7c7f-cc78">
+                <entryLink import="true" name="Boltgun" hidden="false" id="8194-c900-0b9d-820a" type="selectionEntry" targetId="b27c-673f-7c7f-cc78">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="85f6-feed-aafc-a3f3" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fcf-389a-533f-f4d2" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="562c-daae-ad7b-a761-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="562c-daae-ad7b-a761-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Bolt pistol" hidden="false" id="a14d-b852-1943-008c" type="selectionEntry" targetId="5541-daf-9f4a-ce3d">
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="fba8-1e33-4642-f0d4" type="selectionEntry" targetId="5541-daf-9f4a-ce3d">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd6a-d477-a5f4-169f" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b710-6670-23d2-496a" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="040f-570f-ac49-4db5-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="040f-570f-ac49-4db5-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Reaver&apos;s blade" hidden="false" id="2b56-46db-66e5-5b17" type="selectionEntry" targetId="70f0-ee26-33de-7dd0"/>
+                <entryLink import="true" name="Reaver&apos;s blade" hidden="false" id="09f0-0c6b-0559-ea9d" type="selectionEntry" targetId="70f0-ee26-33de-7dd0"/>
               </entryLinks>
               <profiles>
-                <profile name="Red Corsairs Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="784d-35f9-3288-6aec">
+                <profile name="Red Corsairs Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bd10-d0a2-ed21-1939">
                   <characteristics>
                     <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
                     <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
@@ -28654,168 +28654,108 @@ This unit cannot join an Attached unit, and only Huron Blackheart can join a uni
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="decrement" value="1" field="9277-3249-7671-43a2">
+                <modifier type="decrement" value="1" field="7afe-4d3d-d23d-1f9b">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="2078-97ce-8793-3382" childId="f4c4-e077-7308-0288" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="2078-97ce-8793-3382" childId="1471-b7be-53dc-b29c" shared="true" roundUp="false" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="2078-97ce-8793-3382" childId="cacb-e9fa-e320-a626" shared="true" roundUp="false" includeChildSelections="true"/>
                   </repeats>
                 </modifier>
               </modifiers>
             </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Raiders with alternate weapons" id="f4c4-e077-7308-0288" hidden="false">
+            <selectionEntry type="model" import="true" name="Red Corsairs Raider w/ meltagun" hidden="false" id="1471-b7be-53dc-b29c">
               <constraints>
-                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8c32-b9dd-2e65-9c4d" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d71d-3490-db6d-7c28" includeChildSelections="false"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Red Corsairs Raider w/ meltagun" hidden="false" id="99c7-822b-71a6-8e49">
+              <entryLinks>
+                <entryLink import="true" name="Meltagun" hidden="false" id="8d87-2def-867c-ff76" type="selectionEntry" targetId="95d-2d06-b256-2db">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1fa8-d652-2148-2efb" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cebb-80e6-9139-c3f3-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cebb-80e6-9139-c3f3-max" includeChildSelections="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Meltagun" hidden="false" id="a104-f370-39bd-2ba4" type="selectionEntry" targetId="f0ee-44c4-e1b1-42d">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7e48-21f8-268b-457b" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfe0-1262-07e8-d7b7" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="73e1-b18a-763a-9ca0" type="selectionEntry" targetId="5541-daf-9f4a-ce3d">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="233d-ffaf-ac94-3e97" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69b3-939b-b99f-2b70" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Reaver&apos;s blade" hidden="false" id="7388-8c00-ed32-e3be" type="selectionEntry" targetId="70f0-ee26-33de-7dd0"/>
-                  </entryLinks>
-                  <profiles>
-                    <profile name="Red Corsairs Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="595c-09df-e7a6-2f5c">
-                      <characteristics>
-                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Red Corsairs Raider w/ power fist" hidden="false" id="9e3e-1359-02ee-cb12">
+                </entryLink>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="95f0-0c65-953f-742a" type="selectionEntry" targetId="5541-daf-9f4a-ce3d">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2d23-b3e9-e7e1-f34d" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b317-bb47-9133-082d-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b317-bb47-9133-082d-max" includeChildSelections="false"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Boltgun" hidden="false" id="9973-57bf-1b3c-11d2" type="selectionEntry" targetId="b27c-673f-7c7f-cc78">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71d1-31c5-83aa-0771" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae92-612f-45cd-e874" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="3b34-350c-6b64-3a4d" type="selectionEntry" targetId="5541-daf-9f4a-ce3d">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d6c2-05d3-356a-5dfb" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f18-3ff3-2cb0-5545" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Power fist" hidden="false" id="c01e-d653-8006-d16a" type="selectionEntry" targetId="8154-2146-1197-90be">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2b4-2fc2-23d4-f510" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e71-c1ae-4ac1-7573" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <profiles>
-                    <profile name="Red Corsairs Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="4b67-d36b-2e95-6093">
-                      <characteristics>
-                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <modifiers>
-                    <modifier type="add" value="Max 1 power fist per 5 models" field="error">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition type="lessThan" value="10" field="selections" scope="2078-97ce-8793-3382" childId="model" shared="true" includeChildSelections="true"/>
-                            <condition type="greaterThan" value="1" field="selections" scope="2078-97ce-8793-3382" childId="9e3e-1359-02ee-cb12" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="model" import="true" name="Red Corsairs Raider w/ power fist and meltagun" hidden="false" id="01d4-d8ad-0b62-34e2">
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="983b-3a7d-b00b-e4e7" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Meltagun" hidden="false" id="44af-f23a-5926-8c49" type="selectionEntry" targetId="f0ee-44c4-e1b1-42d">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f646-581f-b71c-ad76" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ad9-2c35-aeeb-d10f" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="668c-1ce1-427e-ec39" type="selectionEntry" targetId="5541-daf-9f4a-ce3d">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f532-ed77-3856-563d" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2c9-caaf-9619-953a" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Power fist" hidden="false" id="0a94-9722-a269-0dab" type="selectionEntry" targetId="8154-2146-1197-90be">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2912-1642-d090-522f" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2160-c8e2-5934-4e7c" includeChildSelections="false"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <profiles>
-                    <profile name="Red Corsairs Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3c81-afed-330d-8a55">
-                      <characteristics>
-                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
-                        <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-                        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
-                        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-                        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+                <entryLink import="true" name="Reaver&apos;s blade" hidden="false" id="7555-cd59-bdef-49cf" type="selectionEntry" targetId="70f0-ee26-33de-7dd0"/>
+              </entryLinks>
+              <profiles>
+                <profile name="Red Corsairs Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="6153-1681-12bc-a500">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <modifiers>
-                <modifier type="decrement" value="1" field="8c32-b9dd-2e65-9c4d">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="2078-97ce-8793-3382" childId="01d4-d8ad-0b62-34e2" shared="true" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="add" value="Max 1 power fist per 5 models" field="error">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="2078-97ce-8793-3382" childId="model" shared="true"/>
-                        <condition type="greaterThan" value="1" field="selections" scope="2078-97ce-8793-3382" childId="8154-2146-1197-90be" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
                 <modifier type="add" value="Max 1 meltagun per 5 models" field="error">
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="2078-97ce-8793-3382" childId="model" shared="true"/>
-                        <condition type="greaterThan" value="1" field="selections" scope="2078-97ce-8793-3382" childId="f0ee-44c4-e1b1-42d" shared="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="10" field="selections" scope="2078-97ce-8793-3382" childId="model" shared="true" includeChildSelections="true"/>
+                        <condition type="greaterThan" value="1" field="selections" scope="2078-97ce-8793-3382" childId="1471-b7be-53dc-b29c" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Red Corsairs Raider w/ power fist" hidden="false" id="cacb-e9fa-e320-a626">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f211-678d-659a-474d" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="5471-de6e-3253-9c58" type="selectionEntry" targetId="b27c-673f-7c7f-cc78">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c747-e964-3bfc-2ab4-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c747-e964-3bfc-2ab4-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="8954-a211-9048-295b" type="selectionEntry" targetId="5541-daf-9f4a-ce3d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="765d-9987-92d3-bb20-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="765d-9987-92d3-bb20-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power fist" hidden="false" id="8071-8f00-7bce-4e00" type="selectionEntry" targetId="8154-2146-1197-90be">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a00-64ac-d276-0ef1-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a00-64ac-d276-0ef1-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Red Corsairs Raider" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="debb-1d2d-fbe0-b4ff">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="Max 1 power fist per 5 models" field="error">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="10" field="selections" scope="2078-97ce-8793-3382" childId="model" shared="true" includeChildSelections="true"/>
+                        <condition type="greaterThan" value="1" field="selections" scope="2078-97ce-8793-3382" childId="cacb-e9fa-e320-a626" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
