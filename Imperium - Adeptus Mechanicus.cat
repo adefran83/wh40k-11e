@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="93" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="77b9-2f66-3f9b-5cf3" name="Imperium - Adeptus Mechanicus" revision="100" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="f826-1ad1-a542-2058" name="Archaeopter Fusilave" hidden="false"/>
     <categoryEntry id="37b3-cded-c814-6e63" name="Archaeopter Stratoraptor" hidden="false"/>
@@ -46,6 +46,8 @@
     <categoryEntry name="Infiltrators" id="20d8-c9da-14df-9d01" hidden="false"/>
     <categoryEntry name="Pteraxii" id="f8db-f163-9a12-b79c" hidden="false"/>
     <categoryEntry name="Servitor Battleclade" id="b94e-c390-0c3b-f9cf" hidden="false"/>
+    <categoryEntry name="Thulia Ghuld" id="db48-9f40-7ae0-b70e" hidden="false"/>
+    <categoryEntry name="Hastarii" id="a0a3-e4ff-ee06-9b84" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="9bc2-4d5f-5d27-ce7a" name="Archaeopter Fusilave" hidden="false" collective="false" import="true" targetId="7662-5fde-16f1-5267" type="selectionEntry"/>
@@ -110,6 +112,7 @@
         <entryLink import="true" name="Shadow Operations" hidden="false" id="df7a-e1c1-dba0-8ff4" type="selectionEntryGroup" targetId="68a2-ada5-3cd4-c5a3"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Hastarii Exterminators" hidden="false" id="cf00-7011-33c8-b94d" targetId="d3f3-2a4f-9412-666c" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7662-5fde-16f1-5267" name="Archaeopter Fusilave" hidden="false" collective="false" import="true" type="model">
@@ -745,8 +748,14 @@ Shroudpsalm (Aura): While a friendly Adeptus Mechanicus unit is within 6&quot; o
         <entryLink id="c097-c2fe-be86-de31" name="Warlord" hidden="false" collective="false" import="true" targetId="0580-79ca-da98-77c3" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d669-cced-ab2c-12bf" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3442-5d8e-724f-8283" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="d669-cced-ab2c-12bf">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="db48-9f40-7ae0-b70e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -7501,7 +7510,7 @@ You must attach this model to a Kastelan Robots unit, even if one or more other 
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21a4-29e7-2160-b8d9"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb74-a70a-7070-9821"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -10423,6 +10432,606 @@ Bodyguard unit, and that Bodyguard unit’s Starting Strength is increased acco
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry id="2dac-22f7-b717-fc3c" name="Thulia Ghuld" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="bbb0-2769-4d62-ef0d" name="Thulia Ghuld" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="015a-6409-45d2-d329" name="Secutor of Olympus" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting phase, select one enemy Vehicle unit within 12&quot; of this model and roll one D6: on a 2+, that enemy unit suffers D3+1 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0dc6-44d0-5bce-cb2d" name="Mechanicus Bodyguard" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more other friendly ADEPTUS MECHANICUS units, this model has the Lone Operative ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="407c-2532-9399-03a1" name="Cybernetic Augmentation" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can move through terrain features, but cannot end a move within a wall, a floor, etc. This model can be set up or end a move on any floor level of Ruins, but if that level is not the ground floor, it can only do so if its base does not overhang the floor at that level.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d0e4-6238-d6e1-7cd2">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+          </characteristics>
+          <comment>4+</comment>
+        </profile>
+        <profile id="cc2d-387c-309b-2e73" name="Rod of the War Forge" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one of the abilities in the Icon of War section (see below). Until the start of your next Command phase, this model has that ability.
+
+
+Fanatical Devotion: You can select one friendly Skitarii or Thulia Ghuld unit within 6&quot; of this model; until the start of your next Command phase, that unit is eligible to shoot and declare a charge in a turn in which it Advanced.
+
+
+Adaptive Tactics: You can select one friendly Skitarii or Thulia Ghuld unit within 6&quot; of this model; until the start of your next Command phase, that unit is eligible to shoot and declare a charge in a turn in which it Fell Back.
+
+
+The Fires of Mars: You can select one friendly Skitarii or Thulia Ghuld unit within 6&quot; of this model; until the start of your next Command phase, the Conqueror Imperative and Protector Imperative are both active for that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Doctrina Imperatives" id="3c81-ca68-ff09-f205" hidden="false" type="rule" targetId="7a21-a958-e47d-5c0d"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5d98-cbc2-3396-616b" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink id="6c5f-3f24-b33f-795c" name="Monster" hidden="false" targetId="9693-cf84-fe69-37a9" primary="false"/>
+        <categoryLink id="318f-7193-d785-d2d3" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink id="5435-4898-9636-5b2f" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5418-f86b-6e76-c5a" primary="false"/>
+        <categoryLink id="bdf4-1c36-fd29-589f" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink targetId="6d46-7883-e5d1-45ee" id="af0a-9eb7-3d6d-b9f2" primary="false" name="Cult Mechanicus"/>
+        <categoryLink targetId="db48-9f40-7ae0-b70e" id="4df1-2278-4c63-356c" primary="false" name="Thulia Ghuld"/>
+        <categoryLink targetId="59a9-b5cc-7c11-aaad" id="c810-a8ed-c3ab-3269" primary="false" name="Tech-Priest"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="9d61-2316-c5a4-538f" collective="false">
+          <categoryLinks>
+            <categoryLink name="Warlord" hidden="false" id="5a0b-7edb-5fef-5d05" targetId="5c0e-4c31-d51b-e470" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c588-12d6-691b-46ce"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ef0-35a2-6a90-b337"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="77b9-2f66-3f9b-5cf3" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="c588-12d6-691b-46ce">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9106-4e44-7994-8859" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rod of the War Forge" hidden="false" id="49a5-0fa2-2b3e-965e" collective="false">
+          <profiles>
+            <profile name="➤ Rod of the War Forge – sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="886d-ed98-ca45-08f2">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Rod of the War Forge – strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4bcd-40a5-740b-0752">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Blast" id="9251-c170-6368-4763" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+            <infoLink name="Devastating Wounds" id="687f-88ff-4bcc-931f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+            <infoLink name="Sustained Hits" id="610b-31e9-da07-44a6" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Jericho-class conversion resonator" hidden="false" id="b2a9-a9b8-03cd-1144" collective="false">
+          <profiles>
+            <profile name="➤ Jericho-class conversion resonator – titanic impact" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="37f2-4acb-7389-869b">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Jericho-class conversion resonator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ae5c-d3b0-bbe7-4d1a">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+2</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Sustained Hits 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Blast" id="ea39-070c-61db-7cbc" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+            <infoLink name="Devastating Wounds" id="ce6f-c931-5705-d9e8" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+            <infoLink name="Sustained Hits" id="7b24-75f6-b024-a98a" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cfce-0c07-f115-ef16" includeChildSelections="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="7da5-abe2-eb44-33d4" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="ff0d-1d03-c763-3d81" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry id="d3f3-2a4f-9412-666c" name="Hastarii Exterminators" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="8984-0404-795f-513e" name="Hastarii Exterminators" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9429-a40f-4652-e45c" name="Broad-spectrum Targeting Augurs" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack with an eradication caster that targets a unit (excluding Monster and Vehicle units), that attack has the [Sustained Hits 1] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Doctrina Imperatives" hidden="false" type="rule" id="6afa-8a7d-07c5-ef98" targetId="7a21-a958-e47d-5c0d"/>
+        <infoLink name="Invulnerable Save" id="2328-e43d-d573-f173" hidden="false" type="profile" targetId="8c24-fbe9-b191-175f"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0e4b-9c2d-16b5-a7c5" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink id="d211-3c9f-0e4c-7841" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5418-f86b-6e76-c5a" primary="false"/>
+        <categoryLink id="0d89-da5a-1611-7856" name="Skitarii" hidden="false" targetId="2a4e-9018-d675-74f1" primary="false"/>
+        <categoryLink id="4da6-5ddc-8215-9db0" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink targetId="a0a3-e4ff-ee06-9b84" id="696a-e4e0-6850-83dd" primary="false" name="Hastarii"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0fc5-1259-52d9-6fc4" name="4 Hastarii Exterminators" hidden="false" collective="false" import="true" defaultSelectionEntryId="f477-ffcb-dcce-283d" sortIndex="3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11d8-56f6-e3a7-4a5b" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb2f-ec16-822b-1ba0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7f88-8306-a831-fa9a" name="Hastarii Exterminator" hidden="false" collective="false" import="true" type="model">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hastarii arc blaster" hidden="false" id="cf81-aa36-8304-754f" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e91-0566-b788-d35a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3850-0c81-62d7-37bb"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="2e34-8627-031b-74fd" name="Hastarii arc blaster" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Anti-Vehicle 4+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Devastating Wounds" hidden="false" type="rule" id="94dc-3f5f-7c66-28ce" targetId="be1e-ac8e-1e2c-3528"/>
+                    <infoLink name="Anti-" hidden="false" type="rule" id="1af7-9eb0-b8ea-838f" targetId="4111-82e3-9444-e942"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Eradication caster" hidden="false" id="3e0f-378c-c1fc-8e73" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af0e-075a-67ce-4652"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc23-b9eb-8dc9-5c49"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="fc2a-bf90-9b6c-0835" name="➤ Eradication caster – dissipated" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="7c56-273d-6f58-b7a0" name="➤ Eradication caster – focused" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">15&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-" hidden="false" type="rule" id="42b9-e49a-0206-cc9d" targetId="4111-82e3-9444-e942"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Close-combat weapon" hidden="false" id="a439-d506-e5a2-1c30">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cbdb-977a-f16e-3e62"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ac-b4a1-e90f-7bf5"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close-combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="64c7-aae5-d5ab-0298">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="6410-4b68-c333-1f03" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d9f6-460e-ea9f-12b5" name="Hastarii Exterminator Alpha" hidden="false" collective="false" import="true" defaultSelectionEntryId="6e59-0bfb-4911-fca0" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c7c-b504-86e4-00e3" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4726-eb19-970f-ef67" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="14b0-e496-cdea-0a26">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="116b-9af7-e09c-6a22"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6644-cd20-02d0-9f99"/>
+              </constraints>
+              <profiles>
+                <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="c1ef-809c-1b17-5935">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="8042-85f5-9a5c-5b58" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eradication caster" hidden="false" id="d606-9ee3-d4bb-a2fb" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0ef-589f-9cd8-8baf"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca02-1319-670d-1ecb"/>
+              </constraints>
+              <profiles>
+                <profile name="➤ Eradication caster – dissipated" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="07a5-1b85-104a-8e71">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤ Eradication caster – focused" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d130-61b5-f594-60d8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">15&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-Infantry 4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="2355-1f32-39c8-edac" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hastarii arc blaster" hidden="false" id="f9ef-362b-e49c-fa70" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e125-0990-1c9c-431c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="710b-d464-17a1-0800"/>
+              </constraints>
+              <profiles>
+                <profile name="Hastarii arc blaster" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="db92-143e-8686-6572">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Anti-Vehicle 4+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Devastating Wounds" id="456c-1f8f-46ff-e89e" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+                <infoLink name="Anti-" id="22be-855c-f2e7-3394" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="135"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="63c2-e283-7a35-320f" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="2717-364b-d477-3434" type="selectionEntryGroup" targetId="631d-2f3a-99a1-2ab0" sortIndex="1"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8c39-5a38-9f05-991b" name="Hastarii Fusiliers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="9b12-463d-2582-897e" name="Hastarii Fusiliers" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="58f2-a1bd-be9c-8a86" name="Monocular Targeting Helms" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack with a neutron fusil against a Monster or Vehicle unit, that attack has the [Ignores Cover] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Doctrina Imperatives" hidden="false" type="rule" id="7382-21a5-5f4c-cd85" targetId="7a21-a958-e47d-5c0d"/>
+        <infoLink name="Invulnerable Save" id="c2d7-d1b4-d4b4-efe6" hidden="false" type="profile" targetId="8c24-fbe9-b191-175f"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9338-8f33-64f6-0564" name="Imperium" hidden="false" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink id="8bf0-b836-6127-a333" name="Faction: Adeptus Mechanicus" hidden="false" targetId="5418-f86b-6e76-c5a" primary="false"/>
+        <categoryLink id="b37a-1a50-cc72-9764" name="Skitarii" hidden="false" targetId="2a4e-9018-d675-74f1" primary="false"/>
+        <categoryLink id="6e05-7477-9a0e-46bd" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink targetId="a0a3-e4ff-ee06-9b84" id="9093-5d93-c32f-2a2e" primary="false" name="Hastarii"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="43dc-d873-45b2-1757" name="4 Hastarii Fusiliers" hidden="false" collective="false" import="true" defaultSelectionEntryId="f477-ffcb-dcce-283d" sortIndex="3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e22-89fa-8b2e-17ae" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c43-4a6c-f85c-279b" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="62ae-5f23-e915-0361" name="Hastarii Exterminator" hidden="false" collective="false" import="true" type="model">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Close-combat weapon" hidden="false" id="0d41-d447-cb75-8faa">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="706c-6aeb-db8c-fa00"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6c9-a492-790e-a942"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Close-combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5f45-5642-e0ad-3f88">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="c64f-f4d7-b4c2-785f" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hastarii phosphor blaster" hidden="false" id="5773-1b61-9060-85ae" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="780b-b74d-e386-43df"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1f4-b213-de34-d6f1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Hastarii phosphor blaster" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="94a9-1e87-69f1-3b35">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores cover</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Ignores Cover" id="fd95-01fb-0eaf-51cc" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Neutron fusil" hidden="false" id="95b3-d4b0-2184-1bb4" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9524-c55f-fb65-be2e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c49d-4161-9f12-327f"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Neutron fusil " typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="70ae-fd83-a00b-3c1e">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Anti-" id="23a8-9768-3fed-9114" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ede8-e0af-a651-fba6" name="Hastarii Fusilier Alpha" hidden="false" collective="false" import="true" defaultSelectionEntryId="6e59-0bfb-4911-fca0" sortIndex="2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb14-cea2-3567-076a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a2-ec25-8abf-08e2" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power weapon" hidden="false" id="1f5c-0851-9676-7e46">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c90-fe68-086c-a97c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d547-5ca3-7035-6ecd"/>
+              </constraints>
+              <profiles>
+                <profile name="Power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="84b4-23a9-ff04-0b64">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Weapon Modifications" hidden="false" id="53fe-6297-8f9f-c5b3" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Neutron fusil" hidden="false" id="a1bc-751f-9bca-aafb" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d7bd-c719-3348-7e6a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="765d-b7f9-9e1e-fe4f"/>
+              </constraints>
+              <profiles>
+                <profile name="Neutron fusil " typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="c48f-5346-9368-421a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Anti-" id="4c05-f99a-5237-5cda" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Hastarii phosphor blaster" hidden="false" id="7380-0565-2cc4-c9f2" collective="true">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c51b-04db-6c66-031f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4e2-7ccc-1f29-54ca"/>
+              </constraints>
+              <profiles>
+                <profile name="Hastarii phosphor blaster" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4a9f-6602-796f-c8c8">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores cover</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Ignores Cover" id="881c-6409-1178-8198" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="145"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="6650-6c78-9ef9-1883" includeChildSelections="true"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Crusade" hidden="false" id="fdd7-eaf5-095d-dc87" type="selectionEntryGroup" targetId="631d-2f3a-99a1-2ab0" sortIndex="1"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

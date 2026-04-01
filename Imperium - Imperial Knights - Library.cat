@@ -5798,44 +5798,6 @@ Quality
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear Options" id="f696-38af-2f8b-3153" hidden="false" sortIndex="4">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Thunderstrike gauntlet" hidden="false" id="fb23-351e-eac9-e5ae">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a30-2598-d836-e2e3"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c76-0ffb-56c1-1d42"/>
-              </constraints>
-              <profiles>
-                <profile name="➤ Thunderstrike gauntlet - strike" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9aa6-0171-fdd4-1243">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">20</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">8</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Devastating Wounds</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="➤ Thunderstrike gauntlet - sweep" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="24db-15e1-f16a-474e">
-                  <characteristics>
-                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                    <characteristic name="A" typeId="2337-daa1-6682-b110">12</characteristic>
-                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
-                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
-                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lethal Hits</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <comment>Gallant variant</comment>
-              <entryLinks>
-                <entryLink import="true" name="Weapon Modifications" hidden="false" id="cba9-87e6-0143-7453" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Devastating Wounds" id="e3be-de20-5004-283e" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-                <infoLink name="Lethal Hits" id="a828-fbf3-6655-8764" hidden="false" type="rule" targetId="d1d1-611e-5191-1095"/>
-              </infoLinks>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Titanic feet" hidden="false" id="1bee-f31a-b7a5-6ad1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="77e0-cb44-ea97-43bf"/>
