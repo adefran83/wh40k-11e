@@ -10568,11 +10568,6 @@ The Fires of Mars: You can select one friendly Skitarii or Thulia Ghuld unit wit
           <costs>
             <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
           </costs>
-          <infoLinks>
-            <infoLink name="Blast" id="9251-c170-6368-4763" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-            <infoLink name="Devastating Wounds" id="687f-88ff-4bcc-931f" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
-            <infoLink name="Sustained Hits" id="610b-31e9-da07-44a6" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
-          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Jericho-class conversion resonator" hidden="false" id="b2a9-a9b8-03cd-1144" collective="false">
           <profiles>
