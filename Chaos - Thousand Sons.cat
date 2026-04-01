@@ -1509,7 +1509,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                       <profiles>
                         <profile name="Pyraflux magma cutter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ad0c-8b96-623e-a68d">
                           <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
