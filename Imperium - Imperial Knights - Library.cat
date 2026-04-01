@@ -259,7 +259,15 @@ Quality
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink import="true" name="Knight Destrier" hidden="false" id="416d-a622-eac8-f686" targetId="8f5a-2576-3280-8756" type="selectionEntry"/>
+    <entryLink import="true" name="Knight Destrier" hidden="false" id="416d-a622-eac8-f686" targetId="8f5a-2576-3280-8756" type="selectionEntry">
+      <modifiers>
+        <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="25dd-7aa0-6bf4-f2d5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Canis Rex" id="55fb-9c91-1a4f-3037">
