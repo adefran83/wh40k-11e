@@ -15130,10 +15130,6 @@ You can attach this model to one of the above units even if one other CHARACTER 
             <selectionEntryGroup name="Main cannon" id="c0cc-4057-d56b-b896" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades battle cannon" hidden="false" id="b75-da0a-54fa-6f20" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8116-eb6d-5e30-1f5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7e8-d3ed-1381-466f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="Hades battle cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="95ec-34c-7da4-cc18">
                       <characteristics>
@@ -15184,12 +15180,12 @@ You can attach this model to one of the above units even if one other CHARACTER 
                   <infoLinks>
                     <infoLink name="Blast" id="007e-af45-f99b-bc1f" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                   </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40d3-2785-ac76-6fda" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6594-0108-117e-06ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c87-7af1-f6ed-8184" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="24d2-d976-17cb-2d46" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>

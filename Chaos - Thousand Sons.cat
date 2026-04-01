@@ -1481,7 +1481,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                             <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                           </characteristics>
@@ -1496,23 +1496,23 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="2 Magma cutters" hidden="false" id="835d-5a7d-14c4-9ef2" collective="false">
+                <selectionEntry type="upgrade" import="true" name="2 Pyraflux magma cutters" hidden="false" id="835d-5a7d-14c4-9ef2" collective="false">
                   <costs>
                     <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
                   </costs>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Magma cutter" hidden="false" id="961a-777b-e1cc-34a8">
+                    <selectionEntry type="upgrade" import="true" name="Pyraflux magma cutter" hidden="false" id="961a-777b-e1cc-34a8">
                       <constraints>
                         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5970-291b-a071-dbae" includeChildSelections="false"/>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9459-a408-7caa-a140" includeChildSelections="false"/>
                       </constraints>
                       <profiles>
-                        <profile name="Magma cutter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ad0c-8b96-623e-a68d">
+                        <profile name="Pyraflux magma cutter" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ad0c-8b96-623e-a68d">
                           <characteristics>
                             <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
                             <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
                             <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
                             <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
                             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
                             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Melta 2</characteristic>
@@ -1622,7 +1622,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Sustained Hits 1</characteristic>
                       </characteristics>
@@ -1655,7 +1655,7 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                         <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
                         <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
                         <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds, Sustained Hits 1</characteristic>
                       </characteristics>
@@ -1761,10 +1761,6 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
             <selectionEntryGroup name="Main cannon" id="220e-68ce-9eb8-3f74" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades battle cannon" hidden="false" id="08f4-fd41-681a-bf7c" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f13c-dda4-9fe9-bb89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c89c-28b7-70d2-c884" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="Hades battle cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3f8e-2714-767e-a1b9">
                       <characteristics>
@@ -1815,12 +1811,12 @@ Each time a **^^Thousand Sons Vehicle^^** model from your army with the Deadly D
                   <infoLinks>
                     <infoLink name="Blast" id="caff-073b-aa99-dce5" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                   </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0236-1d64-c4f2-160b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a701-1a5a-0e70-6442" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="16e3-5f99-606b-4981" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7ca-0d42-8d29-a232" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>

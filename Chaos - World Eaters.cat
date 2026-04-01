@@ -3950,10 +3950,6 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
             <selectionEntryGroup name="Main cannon" id="bfce-b69f-519a-f499" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades battle cannon" hidden="false" id="3782-2a17-7e66-e06b" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eda-e011-3a69-3436" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd53-901d-fe85-ff18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="Hades battle cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6bfa-176d-0bc2-61eb">
                       <characteristics>
@@ -4006,12 +4002,12 @@ Example: Ash makes a Blessings of Khorne roll, getting the following: 1, 2, 2, 2
                     <infoLink name="Blast" id="c13f-64db-5175-9c82" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                     <infoLink name="Rapid Fire" id="ce4a-646e-48ab-a347" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
                   </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b36b-71e0-e916-5957" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8f2-03fd-ea7d-d52a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ba8-a241-2892-0401" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a46-3fb4-7585-3dd7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>

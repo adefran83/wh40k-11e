@@ -4416,10 +4416,6 @@ Once per battle round, when you target a Fulgrim unit from your army with the Si
             <selectionEntryGroup name="Main cannon" id="650a-0f00-a66a-aeb2" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades battle cannon" hidden="false" id="5ca2-3636-f5d5-6e7f" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="11cd-acff-cb00-cb96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="083d-aed6-0c58-93de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="Hades battle cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d0f8-6651-d7e3-4807">
                       <characteristics>
@@ -4470,12 +4466,12 @@ Once per battle round, when you target a Fulgrim unit from your army with the Si
                   <infoLinks>
                     <infoLink name="Blast" id="ab1a-3821-f157-13ec" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                   </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d0d-1e4b-2564-9d6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19a8-50b9-44d1-dd5c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a84a-ee58-8857-70c9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccc3-9aa7-0727-104e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>

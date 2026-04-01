@@ -10576,7 +10576,7 @@ The Fires of Mars: You can select one friendly Skitarii or Thulia Ghuld unit wit
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Devastating Wounds</characteristic>
               </characteristics>
             </profile>
-            <profile name="➤ Jericho-class conversion resonator" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ae5c-d3b0-bbe7-4d1a">
+            <profile name="➤ Jericho-class conversion resonator - shockwave" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ae5c-d3b0-bbe7-4d1a">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+2</characteristic>

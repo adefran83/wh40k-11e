@@ -4266,10 +4266,6 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
             <selectionEntryGroup name="Main cannon" id="2091-290d-437a-b51e" hidden="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hades battle cannon" hidden="false" id="391e-28e6-df70-61d9" collective="false">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e020-f9e2-ce25-a415" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83ad-f5c1-f9fe-5ce2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                   <profiles>
                     <profile name="Hades battle cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ca0c-2420-f05b-5605">
                       <characteristics>
@@ -4322,12 +4318,12 @@ While TYPHUS is leading this unit, enemy models destroyed as a result of TYPHUS&
                     <infoLink name="Blast" id="0ef6-26c4-f0b8-fd3c" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
                     <infoLink name="Lethal Hits" id="ae3d-3c69-80e0-d874" hidden="false" targetId="d1d1-611e-5191-1095" type="rule"/>
                   </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de27-495c-e361-ad25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b39f-05bc-c452-61f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb89-d19e-76ff-cba7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2aa0-e9d6-be5f-7b1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
