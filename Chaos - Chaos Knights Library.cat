@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="60" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="65" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="99dc-0f47-85e2-75da" name="War Dog" hidden="false">
       <modifiers>
@@ -2202,6 +2202,30 @@ range of one or more objective markers.</characteristic>
               </infoLinks>
               <categoryLinks>
                 <categoryLink targetId="4ac9-fd30-1e3d-b249" id="f767-a5c3-979e-c74c" primary="true" name="Configuration"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry id="0cf4-55e9-5359-7cb0" name="Helhunt Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Masters of the Pack" id="e11c-314d-64fd-7091" hidden="false" type="rule" targetId="c9ec-e1d7-06aa-8bba">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="0cf4-55e9-5359-7cb0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="0cf4-55e9-5359-7cb0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="4ac9-fd30-1e3d-b249" id="8e75-e53c-acd4-afc5" primary="true" name="Configuration"/>
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4659,6 +4683,116 @@ use this Enhancement. If it does, until the end of the battle, the CP cost your
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Octagram of Conjuration" hidden="false" id="d429-5aba-5bfe-4fd3" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="276b-bbdf-3ea8-c5ef" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Octagram of Conjuration" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2705-9713-3728-7bd6">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Knight Abominant model only. The bearer has the following ability:
+
+
+Octagram of Conjuration (Aura): While a friendly War Dog model is within 9&quot; of this model, after that War Dog model has shot, you can select one enemy unit hit by one or more of those attacks. That enemy unit must take a Battle-shock test.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0cf4-55e9-5359-7cb0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hunter&apos;s Helm" hidden="false" id="c0d9-1e03-75c3-fa07" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="03e5-3de4-472e-b00f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Hunter&apos;s Helm" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2448-b7b8-b653-b122">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Chaos Knights model only. You can re-roll Advance and Charge rolls made for the bearer&apos;s unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0cf4-55e9-5359-7cb0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Throne Tyrannicus" hidden="false" id="9637-ecf9-37cb-07d9" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="708b-42ac-f361-01cc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Throne Tyrannicus" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9ab5-cf46-0b1a-b509">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Titanic Chaos Knights model only. In your Command phase, select one other Chaos Knights Character model within 9&quot; of the bearer. If the bearer has one or more Aura abilities that affect friendly War Dog units, until the start of your next Command phase, the selected Chaos Knights Character model is affected by those Aura abilities as well.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0cf4-55e9-5359-7cb0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Aspect of the Beast" hidden="false" id="c4b0-05f8-97d3-c3fd" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="842c-88a0-139a-4ffb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Aspect of the Beast" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ba7a-ddfd-fd4d-a72c">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Chaos Knights model only. At the start of your Command phase, select one Dread ability to be active for the bearer until the start of your next Command phase, in addition to the Dread abilities active for your army.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="0cf4-55e9-5359-7cb0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -4747,6 +4881,9 @@ have the CHARACTER keyword.</description>
       <description>Imprave the Objective Control characteristic of CHAOS KNIGHTS CHARACTER models from your army by 2. In
 addition, once per battle round, if your WARLORD is on the battlefield, you can use the Claimed for the Dark
 Gods Stratagem for 0CP.</description>
+    </rule>
+    <rule name="Masters of the Pack" id="c9ec-e1d7-06aa-8bba" hidden="false">
+      <description>If a Titanic Chaos Knights unit from your army has an Aura ability that affects friendly War Dog units, while two or more friendly War Dog models are within range of that Titanic Chaos Knights unit&apos;s Aura ability, that Titanic Chaos Knights unit is affected by that Aura ability as well.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

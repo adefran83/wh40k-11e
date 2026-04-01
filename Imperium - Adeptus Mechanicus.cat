@@ -8765,6 +8765,17 @@ Models in this unit have the Stealth ability.</description>
                 </rule>
               </rules>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eradication Cohort" hidden="false" id="314f-a777-9475-aae2">
+              <rules>
+                <rule name="Murderous Imperative" hidden="false" id="abd7-6250-43a8-da22">
+                  <description>Each time a model in a Skitarii unit from your army makes an attack:
+
+
+- If the Protector Imperative is active for that unit, re-roll a Hit roll of 1.
+- If the Conqueror Imperative is active for that unit, re-roll a Wound roll of 1.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -11885,6 +11896,150 @@ The Fires of Mars: You can select one friendly Skitarii or Thulia Ghuld unit wit
           </profiles>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a75-bbbd-58e6-9be3" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Belicosa-Class Capacitor Vanes" hidden="false" id="f98a-88a9-0a0f-d5f8">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="314f-a777-9475-aae2" shared="true" id="41fb-c500-7fee-3013" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Belicosa-Class Capacitor Vanes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b342-7807-907b-e18d">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adeptus Mechanicus model only. Add 6&quot; to the Range characteristic of ranged weapons equipped by models in the bearer&apos;s unit, and add 1 to the Strength characteristic of those weapons.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3274-0138-a036-e7ba" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Omnicogitator" hidden="false" id="e23e-e0ac-8ec3-1096">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b897-e4c6-fcb6-6538" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="314f-a777-9475-aae2" shared="true" id="dce7-a8c7-971a-f7b9" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Omnicogitator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3841-08b6-aa97-ba96">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Skitarii Marshal model only. The Conqueror Imperative and Protector Imperative are both active for the bearer&apos;s unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="09b2-4ecc-3a47-9352" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Omnissiah&apos;s Fury" hidden="false" id="5dfa-c675-2187-e988">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="b897-e4c6-fcb6-6538" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="314f-a777-9475-aae2" shared="true" id="b343-aa3f-336c-7daa" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Omnissiah&apos;s Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0f3a-c0fa-04f8-5ed0">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Skitarii Marshal model only. Add 2 to the Attacks characteristic of melee weapons equipped by the bearer, and improve the Armour Penetration and Damage characteristics of those weapons by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7e9e-af5c-2544-27f7" includeChildSelections="true"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Martial Signatum Amplificator" hidden="false" id="0405-e2e0-1332-c434">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+            <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="59a9-b5cc-7c11-aaad" shared="true"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="roster" childId="314f-a777-9475-aae2" shared="true" id="4a52-2755-9b95-9e1a" includeChildSelections="true" includeChildForces="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Martial Signatum Amplificator" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fc1f-039b-68b3-6bbc">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Tech-Priest model only. Models in the bearer&apos;s unit have the Skitarii keyword.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e1f3-64f4-0c92-5488" includeChildSelections="true"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
