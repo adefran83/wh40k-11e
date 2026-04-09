@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4029-9237-e8db-af55" name="Imperium - Adeptus Astartes - Ultramarines" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="46" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4029-9237-e8db-af55" name="Imperium - Adeptus Astartes - Ultramarines" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="49" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="true" name="Chaplain Cassius [Legends]" hidden="false" type="selectionEntry" id="e1e-1c6b-bb62-f9c8" targetId="b180-3cac-9124-b818"/>
     <entryLink import="true" name="Chief Librarian Tigurius" hidden="false" type="selectionEntry" id="5909-4c97-aba1-e481" targetId="3ef1-1647-cd7b-a40b"/>
@@ -2236,6 +2236,25 @@ This unit cannot join an Attached unit, and only Captain Titus can join a unit t
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea47-fbfb-4705-a48b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="786e-8bc4-3cab-945d"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Master-crafted power weapon" hidden="false" id="0c5d-4886-4c51-f5af">
+              <profiles>
+                <profile name="Master-crafted power weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="addb-bd2a-f844-fda4">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f4f-4fe3-fb0d-8a1d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f38-43ec-11af-48a9" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>

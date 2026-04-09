@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="65" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8106-aad2-918a-9ac" name="Chaos - Chaos Knights Library" revision="66" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <categoryEntries>
     <categoryEntry id="99dc-0f47-85e2-75da" name="War Dog" hidden="false">
       <modifiers>
@@ -3666,12 +3666,11 @@ this phase.</characteristic>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4f5a-5d74-4b13-323a" name="Faction: Chaos Knights" hidden="false" targetId="bb67-f191-6562-acc7" primary="false"/>
-        <categoryLink id="648d-5e62-3f73-a541" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="false"/>
+        <categoryLink id="648d-5e62-3f73-a541" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="true"/>
         <categoryLink id="3a45-b388-5145-4408" name="Walker" hidden="false" targetId="6dda-e157-334d-e93a" primary="false"/>
         <categoryLink id="72c8-b011-37de-bdd3" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="9189-990d-17a7-6b60" name="War Dog" hidden="false" targetId="99dc-0f47-85e2-75da" primary="false"/>
         <categoryLink id="a51f-4e25-618c-444" name="Moirax" hidden="false" targetId="47a1-f548-3346-b0df" primary="false"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="1356-dd19-7769-cd5e" primary="true" name="Battleline"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f9a1-251a-ee9f-707f" name="Weapons" hidden="false" collective="false" import="true">
@@ -3854,6 +3853,16 @@ this phase.</characteristic>
         <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category">
           <conditions>
             <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="46d8-abc8-ef3a-9f85" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ba6-1e1b-1b23-6fe4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="6" field="1df3-61b3-1a11-0900">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6ba6-1e1b-1b23-6fe4" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>

@@ -15723,9 +15723,6 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
       <comment>BS4+ Assault</comment>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="The Twin Lance" hidden="false" id="a7e8-c88e-306f-54de">
-      <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="3ff9-bcdf-a6e1-4d47" targetId="179c-d88a-d49b-48b9" sortIndex="2"/>
-      </entryLinks>
       <infoLinks>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="261a-5282-32a2-55f4" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="ef4e-71de-4029-19a3" targetId="5b77-29f8-7b77-75e3"/>
@@ -15891,6 +15888,9 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Warlord" hidden="false" id="3ff9-bcdf-a6e1-4d47" type="selectionEntry" targetId="179c-d88a-d49b-48b9"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Ri&apos;Locai" hidden="false" id="95c7-dfe3-5a3d-ccbd">
           <selectionEntries>
@@ -16019,6 +16019,9 @@ Designer’s Note: Place two Blacklight Marker Drone tokens next to this model, 
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Warlord" hidden="false" id="bb08-f99c-3937-b823" type="selectionEntry" targetId="179c-d88a-d49b-48b9"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
