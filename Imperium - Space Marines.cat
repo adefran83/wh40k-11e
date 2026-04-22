@@ -36445,6 +36445,11 @@ per turn.</characteristic>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Enhancements" hidden="false" id="8840-e935-7633-ccbc" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="0383-0209-f3d2-4b7a" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eb7-2832-10b1-e43c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -37299,7 +37304,6 @@ Adeptus Astartes units from your army gain the Entrenched keyword while all of t
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time an Adeptus Astartes unit from your army disembarks from a Transport (excluding Aircraft) that made a Normal or Advance move this phase, that disembarked unit can make a Normal move of up to D6&quot;, or a Normal move of up to D3+3&quot; instead if that Transport is a Heavy Transport (see below).
 
-
 Adeptus Astartes Transport units from your army (excluding Aircraft) that have a Wounds characteristic of 14+ have the Heavy Transport keyword.</characteristic>
               </characteristics>
             </profile>
@@ -37311,17 +37315,11 @@ Adeptus Astartes Transport units from your army (excluding Aircraft) that have a
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Tank Ace unit from your army (see below) Advances, do not make an Advance roll for it. Instead, until the end of the phase, add 6&quot; to the Move characteristic of models in that unit.
 
-
 Each time a Tank Ace unit from your army shoots in your Shooting phase, if that unit did not Advance this turn, you can re-roll the Damage roll.
-
-
-
 
 Adeptus Astartes Vehicle units from your army (excluding Fortifications, Drop Pods, Walkers and units that can Fly) have the Tank Ace keyword.
 
-
 In the Muster Armies step, you can select up to three Tank Ace units from your army to gain the Character keyword.
-
 
 Designer&apos;s Note: This means that the selected units can be given Enhancements, and one of them can be selected as your Warlord.</characteristic>
               </characteristics>
