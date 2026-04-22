@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a55f-b7b3-6c65-a05f" name="Xenos - Orks" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="142" battleScribeVersion="2.03" type="catalogue" authorName="BSData Developers" authorContact="Dunamis55 &amp; AbonShell">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a55f-b7b3-6c65-a05f" name="Xenos - Orks" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="152" battleScribeVersion="2.03" type="catalogue" authorName="BSData Developers" authorContact="Dunamis55 &amp; AbonShell">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Warlord" id="8b5-898c-f79b-5a9c">
       <categoryLinks>
@@ -11279,6 +11279,16 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
             <condition type="greaterThan" value="3" field="selections" scope="83a7-ea20-ed9-d14a" childId="model" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set-primary" value="e338-111e-d0c6-b687" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e20f-fdd9-4202-1ac8" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wazdakka Gutsmek"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="ae9d-f74f-769c-5fc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Ghazghkull Thraka"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="8af4-e1d5-25e1-9b85" type="selectionEntryGroup" targetId="87e9-baa9-52e2-5cce" sortIndex="1"/>
@@ -20953,6 +20963,198 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
       </profiles>
       <comment>A3 S6</comment>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Wazdakka Gutsmek" hidden="false" id="ac1a-115f-66f2-cb9f">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="703a-2596-3731-d402"/>
+      </constraints>
+      <profiles>
+        <profile name="Wazdakka Gutsmek" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5253-2397-71e0-dc11">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">14&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+          </attributes>
+        </profile>
+        <profile name="Fixit da Grot" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ab2d-18d5-ba8b-ec1a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Command phase, this model regains up to D3 lost wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Waaagh! Wazdakka" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="41b1-8a5e-944a-8fe3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is your Warlord, Warbiker units from your army have the Battleline keyword.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Throttlerokkit Shokka Engine" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6d3d-cc29-d6dd-c79f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, select one of the abilities in the Throttlerokkit Shokka Engine section (see below). Until the start of your next Command phase, this model has that ability.
+
+
+Turbo Engine: This unit is eligible to declare a charge in a turn in which it Advanced or Fell Back.
+
+
+Shokk Attack Engine: In your Command phase, if this unit is not within Engagement Range of one or more enemy units, you can remove it from the battlefield and place it into Strategic Reserves.
+
+
+Pulse Jet: Each time this unit Advances, do not make an Advance roll for it. Instead, until the end of the phase:
+- Add 6&quot; to the Move characteristic of models in this unit.
+- Models in this unit can move through models and terrain features.
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Waaagh!" hidden="false" type="rule" id="0e47-4a93-2dc2-8c48" targetId="37c-6ef9-277-9091"/>
+        <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="721a-64b8-7193-182c" targetId="9980-27a7-d53a-5df0"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="62f8-7a58-a684-be00" targetId="8b5-898c-f79b-5a9c"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fixit&apos;s wrench" hidden="false" id="67f1-7696-b43f-c739">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e0f-0d31-bd0e-9018"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ba4-c06d-35f7-ce94"/>
+          </constraints>
+          <profiles>
+            <profile name="Fixit&apos;s wrench" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="3c9d-2f08-336d-7abc">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Extra Attacks" hidden="false" type="rule" id="401e-65b1-f2d6-ba69" targetId="115b-79dc-f723-d761"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Grabba dragga" hidden="false" id="fd26-caa6-c86f-6936">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0acb-ec12-689c-61e6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95ae-acb0-8cd3-f573"/>
+          </constraints>
+          <profiles>
+            <profile name="Grabba dragga" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="add7-2fbe-20b1-bb2b">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lance</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Grabba dragga" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6c77-27df-138f-c359">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Precision</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Lance" hidden="false" type="rule" id="27ba-c888-a81c-9a66" targetId="2ebc-abdf-8129-6c57"/>
+            <infoLink name="Assault" id="e5a1-b27f-42a6-d12d" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+            <infoLink name="Precision" id="935f-2461-caeb-05a2" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Speeding bulk and flaming exhaust" hidden="false" id="c1db-648b-0d5a-a416">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08e3-ef44-93f7-a111"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9cf-6c9a-b539-f83e"/>
+          </constraints>
+          <profiles>
+            <profile name="Speeding bulk and flaming exhaust" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d814-a113-b1dd-62d5">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Extra Attacks" hidden="false" type="rule" id="81d7-44cf-01cd-765f" targetId="115b-79dc-f723-d761"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Psyko-gatler" hidden="false" id="c73d-3e06-94e3-8ef8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d154-6845-9334-5805"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fe5-8f28-1ba7-43d4"/>
+          </constraints>
+          <profiles>
+            <profile name="Grabba dragga" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="a58f-85df-bc0c-1a1e">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">Melee</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e"/>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Lance</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Psyko-gatler" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ba45-4c25-bc5a-ed64">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">12</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Sustained Hits 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sustained Hits" hidden="false" type="rule" id="9096-f0bd-d925-9fa1" targetId="1897-c22c-9597-12b1"/>
+            <infoLink name="Assault" hidden="false" type="rule" id="f4fb-e4df-c965-b8e6" targetId="fc8a-8c24-bae9-cc1c"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="c8de-30b6-f833-f073" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="ab02-64e8-d348-684e" primary="false" name="Character"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="9ea8-b047-500d-6d51" primary="false" name="Faction: Orks"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="b987-6f6e-088c-c1dc" primary="false" name="Mounted"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="904d-4d25-a558-0d2c" primary="false" name="Vehicle"/>
+        <categoryLink targetId="6df-937-16bc-8c1a" id="46e4-708a-7b3a-b224" primary="false" name="Smoke"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Crusade" id="d596-63c8-0e2c-5f45" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Mighty Champions" hidden="false" id="8d81-36dc-8ced-4846" type="selectionEntryGroup" targetId="f842-6e90-bc5a-80f1"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <rules>
     <rule name="Waaagh!" hidden="false" id="37c-6ef9-277-9091">
@@ -22409,6 +22611,357 @@ Designer’s Note: Place a Squig Mine token next to the model, removing it once 
             </modifier>
           </modifiers>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Speedwaaagh! Enhancements" id="6b52-4ee9-8223-4547" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Master Meknologist" hidden="false" id="3641-d3f9-1e0e-d28d">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="3641-d3f9-1e0e-d28d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="3641-d3f9-1e0e-d28d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="1ea0-8b1a-ddea-4d7c" shared="true" childName="Big Mek"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="40f3-c394-ec6b-e27f" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Master Meknologist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f622-b571-c19d-1279">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Big Mek model only. Improve the Ballistic Skill characteristic of the bearer&apos;s ranged weapons by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Kustom Shokk Box" hidden="false" id="5d80-7eb7-aa0e-6052">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5d80-7eb7-aa0e-6052" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="5d80-7eb7-aa0e-6052" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="1b8c-203a-e329-2a02" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2b4-49ce-5c70-67c6" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Kustom Shokk Box" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e79f-9117-63a3-8bd1">
+                  <characteristics>
+                    <characteristic name="Description" id="85c0-1e96-2980-4833" hidden="false" typeId="9b8f-694b-e5e-b573">DEFFKILLA WARTRIKE model only. Each time a model in the bearer&apos;s unit makes a Consolidation move, it can move up to 6&quot; instead of up to 3&quot;.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Supa-Burny Fuel" hidden="false" id="6c2e-13c5-be5b-3e09">
+              <profiles>
+                <profile name="Supa-Burny Fuel" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="95d3-bb0b-26b3-ba77">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Deffkilla Wartrike model only. Change the Attacks characteristic of the bearer&apos;s killa jet – burna weapon to 3D6, and change the Attacks characteristic of the bearer&apos;s killa jet – cutta weapon to 3.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6c2e-13c5-be5b-3e09" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="6c2e-13c5-be5b-3e09" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="1b8c-203a-e329-2a02" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5fc2-3817-4038-f0b1" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dakkamek" hidden="false" id="0188-a6f6-3c21-bc07">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="0188-a6f6-3c21-bc07" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="0188-a6f6-3c21-bc07" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="f802-1e3a-d9ce-aa99" shared="true" childName="Mek"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e776-d302-3b94-a1b9" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Dakkamek" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0ef4-c3ea-15b6-44b8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Mek model only. Each time the bearer uses its Mekaniak ability, until the start of your next Command phase, ranged weapons equipped by the selected Vehicle model have the [Rapid Fire 1] ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fce3-ee26-e1a6-f7c5" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="2716-5edf-2f29-8e7b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Speedwaaagh!"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blitz Brigade Enhancements" id="28bf-0c36-58e6-9cc2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Supercharged Squig Oil" hidden="false" id="f113-09ca-7a43-f116">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f113-09ca-7a43-f116" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="f113-09ca-7a43-f116" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="f802-1e3a-d9ce-aa99" shared="true" childName="Mek"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="51dd-c421-6d23-2c64" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Supercharged Squig Oil" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e276-f716-6cce-f8a8">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Mek model only. Each time the bearer uses its Mekaniak ability, until the end of the turn, you can re-roll Charge rolls for the selected Vehicle model&apos;s unit.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tuff Git" hidden="false" id="37ac-0a96-1acd-905a">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="37ac-0a96-1acd-905a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="37ac-0a96-1acd-905a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" childName="Infantry"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2694-14d4-d217-6dbe" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Tuff Git" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7295-824f-90dc-d344">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Orks Infantry Character model only. At the end of a phase in which the bearer&apos;s unit disembarked from a Transport, if that unit is Battle-shocked, it is no longer Battle-shocked.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blitzkaptin" hidden="false" id="fdb0-8ad1-dad7-1eb1">
+              <profiles>
+                <profile name="Blitzkaptin" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ee5a-ed07-4c6f-3c51">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Orks Character model only. After both players have deployed their armies, if the bearer&apos;s unit (or any Transport it is embarked within) is on the battlefield, select up to three Orks Vehicle units from your army and redeploy them. When doing so, you can set those units up in Strategic Reserves, regardless of how many units are already in Strategic Reserves.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fdb0-8ad1-dad7-1eb1" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="fdb0-8ad1-dad7-1eb1" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" childName="Character"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="53bc-cef7-4bd4-5f70" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Runnin&apos; Boots" hidden="false" id="5143-8727-dfa8-8691">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="5143-8727-dfa8-8691" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="5143-8727-dfa8-8691" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="cf47-a0d7-7207-29dc" shared="true" childName="Infantry"/>
+                        <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="9cfd-1c32-585f-7d5c" shared="true" childName="Character"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                <cost name="Blackstone Fragments" typeId="ac6b-ced3-9b5e-9a6e" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2d3f-ad6e-747a-91b0" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Runnin&apos; Boots" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="45c6-38c2-99b5-c495">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Orks Infantry Character model only. Each time you make a Charge roll for the bearer&apos;s unit, if that unit disembarked from a Transport this turn, add 1 to the result.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb5b-c273-a861-3e57" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="2716-5edf-2f29-8e7b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Speedwaaagh!"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="self" shared="true" id="eea8-b34a-f6a4-2ec4" includeChildSelections="true"/>
@@ -22544,6 +23097,23 @@ While the Waaagh! is active for your army, during your Shooting phase, ranged we
           <infoLinks>
             <infoLink name="Sustained Hits" id="20bd-cb08-e800-1179" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Speedwaaagh!" hidden="false" id="2716-5edf-2f29-8e7b">
+          <rules>
+            <rule name="Turbo Boostas" id="0165-184c-9551-51d5" hidden="false">
+              <description>Each time a Speed Freeks or Trukk unit (excluding Aircraft) from your army Advances, it can use its turbo. If it does, do not make an Advance roll for it; instead, until the end of the phase, models in that unit have a Move characteristic of 24&quot; but can only move in one straight line, and until the end of the turn, ranged weapons equipped by those models have the [Assault] ability and that unit cannot declare a charge.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Assault" id="58bc-9689-59ef-df71" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blitz Brigade" hidden="false" id="8f69-ad5b-cde3-537f">
+          <rules>
+            <rule name="Eager for the Fight" id="e81c-4b19-017e-f15e" hidden="false">
+              <description>Each time an Orks unit from your army disembarks from a Transport, until the end of the turn, you can re-roll Advance and Charge rolls made for that Orks unit.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -23974,6 +24544,7 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
     <entryLink import="true" name="Battlewagon" hidden="false" type="selectionEntry" id="9af5-6820-1ff2-6c01" targetId="306a-b2ac-aaf1-9a7c"/>
     <entryLink import="true" name="Beast Snagga Boyz" hidden="false" type="selectionEntry" id="fd9d-87f3-1895-3470" targetId="b7c3-d00e-daf2-76fb"/>
     <entryLink import="true" name="Beastboss" hidden="false" type="selectionEntry" id="2f80-26a6-9486-b348" targetId="5a5d-c5a4-39b8-4a3f"/>
+    <entryLink import="true" name="Wazdakka Gutsmek" hidden="false" id="e20f-fdd9-4202-1ac8" targetId="ac1a-115f-66f2-cb9f" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Damaged: 1-5 Wounds Remaining" hidden="false" id="2be6-f2b9-f73c-82b1" typeName="Abilities" typeId="9cc3-6d83-4dd3-9b64">
