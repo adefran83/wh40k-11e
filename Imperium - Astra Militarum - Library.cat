@@ -33729,16 +33729,12 @@ Designer&apos;s Note: Place a Servo-scribes token next to the unit, removing it 
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Command phase, you can select one of the abilities in the Hero of Hades Hive section (see below). Until the start of your next Command phase, this model has that ability.
 
-
 Counterstrategist: At the end of your opponent&apos;s Movement phase, you can select one enemy unit that was set up or ended a move within 12&quot; of this model&apos;s unit, and one friendly Regiment unit within 6&quot; of and visible to this model. That Regiment unit can then either:
 - Make a Normal move of up to D6&quot;.
-
 - Shoot at that enemy unit, but only if it is an eligible target.
 - Declare a charge against that enemy unit, but only if it is within 12&quot; of that Regiment unit (note that even if this charge is successful, the charging unit does not receive any Charge Bonus this turn).
 
-
 Decisive Command: The next Order issued by this model can be issued to one eligible friendly unit within 12&quot; of this model; if this is the first Order issued by a unit from your army this phase, that Order affects not only the eligible unit, but every other eligible friendly unit within 6&quot; of that eligible unit.
-
 
 Inspiring Hero [Aura]: While a friendly Astra Militarum unit is within 6&quot; of this model, you can re-roll Battle-shock and Leadership tests taken for that unit.</characteristic>
           </characteristics>
@@ -33925,20 +33921,6 @@ Inspiring Hero [Aura]: While a friendly Astra Militarum unit is within 6&quot; o
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1bc8-f5e1-dc76-555d" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
-      <infoGroups>
-        <infoGroup name="Leader" hidden="false" id="d0bc-aa22-8ed2-5d2e">
-          <infoLinks>
-            <infoLink name="Leader" hidden="false" type="rule" id="5fc0-73bb-59b9-572a" targetId="b4dd-3e1f-41cb-218f"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c2b7-d20a-b031-c8cf">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units: Cadian Shock Troops, Catachan Jungle Fighters, Command Squad, Death Korps of Krieg, Kasrkin, Krieg Combat Engineers, Tempestus Scions.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <infoLinks>
         <infoLink name="Invulnerable Save 4+" hidden="false" type="profile" id="364d-dafc-6c55-2d3f" targetId="9658-6ed-d3c0-e755"/>
         <infoLink name="Voice Of Command" hidden="false" type="rule" id="d23f-ffd1-8696-7f98" targetId="53c9-34f6-2443-a95e"/>
@@ -34593,6 +34575,10 @@ Inspiring Hero [Aura]: While a friendly Astra Militarum unit is within 6&quot; o
               <categoryLinks>
                 <categoryLink name="Ranged Weapon" hidden="false" id="8fe0-9539-c47f-f270" targetId="eeda-8544-a2f3-3fab" primary="false"/>
               </categoryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4daf-4299-bce6-c0fa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aae0-7c09-98bc-8373"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

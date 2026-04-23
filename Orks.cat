@@ -22955,7 +22955,7 @@ Pulse Jet: Each time this unit Advances, do not make an Advance roll for it. Ins
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="forces" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="2716-5edf-2f29-8e7b" shared="true" includeChildSelections="true" includeChildForces="true" childName="Speedwaaagh!"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="8f69-ad5b-cde3-537f" shared="true" includeChildSelections="true" includeChildForces="true" childName="Blitz Brigade"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

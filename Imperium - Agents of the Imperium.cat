@@ -18203,7 +18203,19 @@ For the purposes of interacting with terrain features, all models in units with 
         <infoLink name="Assigned Agents" id="00c5-10ab-3a66-995e" hidden="false" type="rule" targetId="58c1-ec7a-74f5-26b9"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Inquisitor Kroyle" hidden="false" id="76b8-94f3-a80f-26f9" targetId="8ab7-21e5-75c8-db43" type="selectionEntry"/>
+    <entryLink import="true" name="Inquisitor Kroyle" hidden="false" id="76b8-94f3-a80f-26f9" targetId="8ab7-21e5-75c8-db43" type="selectionEntry">
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="887b-ab87-92a2-20f5" field="category"/>
+            <modifier type="add" value="49d5-cc63-72d1-7bcb" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b00-cd86-4b4c-97ba" shared="true"/>
+          </conditions>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
   </entryLinks>
   <sharedProfiles>
     <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9522-b10f-5943-435d">
