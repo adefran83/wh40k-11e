@@ -162,6 +162,7 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Crusade" hidden="false" id="e386-f517-4472-5100" type="selectionEntryGroup" targetId="9a99-f13c-a667-e698" sortIndex="1"/>
+        <entryLink import="true" name="Tank Ace Character upgrade" hidden="false" id="9878-3bdc-1742-b015" type="selectionEntry" targetId="57f9-2ae0-e571-0fe4"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Wargear" id="af3f-e75e-0a33-495f" hidden="false" sortIndex="2">
