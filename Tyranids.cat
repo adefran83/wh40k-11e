@@ -436,6 +436,7 @@
     </entryLink>
     <entryLink import="true" name="Hyperadapted Raveners" hidden="false" type="selectionEntry" id="504c-5d1a-b205-c53b" targetId="c10d-772e-a54f-a2b9"/>
     <entryLink import="true" name="Tyranid Prime with Lash Whip" hidden="false" id="ec4e-7ece-8c7b-6431" targetId="6a15-3021-4972-bd40" type="selectionEntry"/>
+    <entryLink import="true" name="The Red Terror" hidden="false" id="3b7d-baa5-a1c3-d9f8" targetId="13fb-39b8-57ee-a4d7" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="86aa-437f-260b-5cad" name="Synapse" hidden="false">
