@@ -34725,10 +34725,10 @@ Inspiring Hero [Aura]: While a friendly Astra Militarum unit is within 6&quot; o
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="12ff-c10d-5460-e734" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="9 Recon Troopers" id="507f-41db-3a68-bc51" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Recon Troopers" id="507f-41db-3a68-bc51" hidden="false" sortIndex="3">
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="33e2-d710-6ce4-cf41" includeChildSelections="false"/>
-            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5cae-94c7-b35f-b00e" includeChildSelections="false"/>
+            <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="33e2-d710-6ce4-cf41" includeChildSelections="false"/>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="5cae-94c7-b35f-b00e" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Recon Trooper" hidden="false" id="e2c1-1d79-9c3e-876a">
@@ -34951,289 +34951,149 @@ Inspiring Hero [Aura]: While a friendly Astra Militarum unit is within 6&quot; o
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="2" field="f87a-9979-0b5b-2ec6">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Weapons Team or Extra Long-las" id="f089-3af1-98c9-1f8c" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="model" import="true" name="Recon Trooper w/ long-las" hidden="false" id="491f-1c44-27c6-a17b">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d343-f871-4ec3-bd7c" includeChildSelections="false"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82fd-43e7-d4c1-7fde" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Close combat weapon" hidden="false" id="ba04-6448-3d77-6045" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc1e-56bc-9f25-2a1c"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4009-4aa4-1a5e-e6fb"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Long-las" hidden="false" id="3b3a-f037-a3c7-3da3">
-                      <profiles>
-                        <profile name="Long-las" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="0e70-3581-d2c6-c849">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Precision</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Heavy" id="94e5-33b8-bf30-f0bd" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                        <infoLink name="Precision" id="41a6-dfce-15f6-5477" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
-                      </infoLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Weapons Team" id="106a-4415-22f5-17f5" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="model" import="true" name="Recon Trooper w/ pistol" hidden="false" id="1a76-3354-914a-4b74">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="149a-4f3a-7304-204f" includeChildSelections="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3d5-cd2a-5d57-d8de" includeChildSelections="false"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Close combat weapon" hidden="false" id="4ea3-4ae4-56ee-2e60" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38f5-232d-4b0c-d66e"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eda-cca8-e4ad-3a44"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Laspistol" hidden="false" id="c81a-2662-8557-4ca0" collective="true">
-                          <profiles>
-                            <profile name="Laspistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="066c-db3a-5f06-8f94">
-                              <characteristics>
-                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                                <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-                                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                          <infoLinks>
-                            <infoLink name="Pistol" id="7b71-034c-703f-ae04" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                          </infoLinks>
-                        </selectionEntry>
-                      </selectionEntries>
-                    </selectionEntry>
-                    <selectionEntry type="model" import="true" name="Recon Trooper w/ missile launcher" hidden="false" id="45c9-b4a4-0271-1e88">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bfa-1e32-b4ba-42de" includeChildSelections="false"/>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a016-885a-b33a-7e9d" includeChildSelections="false"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Close combat weapon" hidden="false" id="c51e-6370-6076-c626" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
-                          <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e3e-141a-e90b-37fc"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f41c-f5e7-b239-00c5"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="6fc4-bfe5-46df-b893">
-                          <profiles>
-                            <profile name="➤ Missile launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d683-0203-1b60-ffe6">
-                              <characteristics>
-                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
-                                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
-                              </characteristics>
-                            </profile>
-                            <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="dd8c-ad01-d587-7248">
-                              <characteristics>
-                                <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
-                                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                                <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
-                                <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                          <infoLinks>
-                            <infoLink name="Heavy" id="bfd8-7243-d3e3-52e1" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
-                            <infoLink name="Blast" id="9f69-4a02-a4ef-45a9" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                          </infoLinks>
-                          <comment>BS5+</comment>
-                        </selectionEntry>
-                      </selectionEntries>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee6d-57b5-c434-3320" includeChildSelections="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2e31-d1c4-277a-d99a" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="9" field="33e2-d710-6ce4-cf41">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="5cae-94c7-b35f-b00e">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup name="Recon Sergeant" id="cc12-6cb8-599d-503e" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Tempestor Aquilon" hidden="false" id="b329-dee9-0447-bfdd">
+            <selectionEntry type="model" import="true" name="Recon Sergeant" hidden="false" id="b329-dee9-0447-bfdd">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0b00-80e1-048f-9cbc" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="868e-05b5-12ef-027a" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="5d1e-bc0d-6de1-8ab1" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="324e-7a18-9af8-5e66" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2ec4-197d-2edf-ed13" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae06-886f-773c-d8c3" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="107b-564f-1523-c257"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d691-d6ed-8809-c00b"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0144-1a6e-39e0-66d0" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                  </entryLinks>
                 </entryLink>
               </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Hot-shot Lascarbine" id="b75a-fc47-2eeb-cd3b" hidden="false" defaultSelectionEntryId="d139-9db1-6bda-9be1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="72b4-85c8-8a14-75f8" collective="true">
+                  <profiles>
+                    <profile name="Lasgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ee70-be36-a002-ebbc">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1, Assault</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Assault" id="b599-ce23-1e40-55e3" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+                    <infoLink name="Rapid Fire" id="d9e9-8b68-c5b3-68ec" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapons Team" id="f089-3af1-98c9-1f8c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Recon Trooper w/ missile launcher" hidden="false" id="45c9-b4a4-0271-1e88">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bfa-1e32-b4ba-42de" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a016-885a-b33a-7e9d" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="c51e-6370-6076-c626" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5542-25ae-6984-8b9f" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1386-2b9e-6bea-97c8" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8e3e-141a-e90b-37fc"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f41c-f5e7-b239-00c5"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Hot-shot lascarbine" hidden="false" id="b917-2bb4-b14e-397a" type="selectionEntry" targetId="a210-87ac-255e-7b8a">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="603f-5def-81b9-2c2a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Chainsword" hidden="false" id="2475-b62d-76aa-d3e4" type="selectionEntry" targetId="3d79-ea50-dfa0-af68">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="fa9d-ed38-17f6-3d4d" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Power weapon" hidden="false" id="a835-5733-f610-cff4" type="selectionEntry" targetId="600b-6aef-1737-a654">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="8eb4-a399-31fb-eb89" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="8aa5-62ee-0ae7-a088" type="selectionEntry" targetId="56ad-b03d-517e-124a">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="9549-439b-2704-127c" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Pistol" id="ef29-2e8b-0eee-b26b" hidden="false" defaultSelectionEntryId="none">
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="6fc4-bfe5-46df-b893">
+                  <profiles>
+                    <profile name="➤ Missile launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="d683-0203-1b60-ffe6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="dd8c-ad01-d587-7248">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Heavy" id="bfd8-7243-d3e3-52e1" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                    <infoLink name="Blast" id="9f69-4a02-a4ef-45a9" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                  </infoLinks>
+                  <comment>BS5+</comment>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Recon Trooper w/ pistol" hidden="false" id="1a76-3354-914a-4b74">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="149a-4f3a-7304-204f" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b3d5-cd2a-5d57-d8de" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="4ea3-4ae4-56ee-2e60" type="selectionEntry" targetId="8fe1-438f-f00a-ef5c">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d77f-a808-c6b0-7e87" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38f5-232d-4b0c-d66e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eda-cca8-e4ad-3a44"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Hot-shot laspistol" hidden="false" id="e703-597c-f1e0-20f2" type="selectionEntry" targetId="56ad-b03d-517e-124a">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7805-ef55-d9a2-95be" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                    <entryLink import="true" name="Bolt pistol" hidden="false" id="b9c3-7d28-7dc7-4a9e" type="selectionEntry" targetId="3117-5234-7ed4-8d7f">
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="aaf5-41d2-3533-2292" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Sentry Flamer" id="cb0e-24f5-71f5-7d4a" hidden="false" defaultSelectionEntryId="e47b-6771-baf1-0ea0">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c355-ac0d-ed1e-9aff" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d960-e412-28bd-d3ad" includeChildSelections="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Sentry flamer" hidden="false" id="085d-91af-4c03-a55c">
-                      <infoLinks>
-                        <infoLink name="Ignores Cover" id="5ccf-837b-4f7a-afe7" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-                        <infoLink name="Torrent" id="aabd-c158-54e3-bcc0" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="Sentry flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="8e1e-7225-dbb5-8d13">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="ee56-b3c4-f22e-c65a" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Sentry hot-shot volley gun" hidden="false" id="ac07-9ea9-d75b-71f6">
-                      <profiles>
-                        <profile name="Sentry hot-shot volley gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e2c5-2c6c-f6f1-b5a2">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">30&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 4</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Rapid Fire" id="d750-d3ce-db77-145c" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
-                      </infoLinks>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="085e-1079-fc69-49d1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Sentry grenade launcher" hidden="false" id="c86d-3dc4-dd19-dc3c">
-                      <infoLinks>
-                        <infoLink name="Blast" id="57af-7d52-8b39-6a9c" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                      </infoLinks>
-                      <profiles>
-                        <profile name="➤ Sentry grenade launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="74d9-a012-0e2c-62b0">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3+3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="➤ Sentry grenade launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="2a44-50f6-26eb-c697">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <entryLinks>
-                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="f1af-fee1-561e-6507" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Laspistol" hidden="false" id="c81a-2662-8557-4ca0" collective="true">
+                  <profiles>
+                    <profile name="Laspistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="066c-db3a-5f06-8f94">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Pistol" id="7b71-034c-703f-ae04" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
