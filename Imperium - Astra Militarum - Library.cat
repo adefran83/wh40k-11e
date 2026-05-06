@@ -34953,23 +34953,38 @@ Inspiring Hero [Aura]: While a friendly Astra Militarum unit is within 6&quot; o
               </selectionEntries>
               <modifiers>
                 <modifier type="set" value="2" field="f87a-9979-0b5b-2ec6">
-                  <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="1a76-3354-914a-4b74" shared="true" childName="Recon Trooper w/ pistol"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
           <modifiers>
             <modifier type="set" value="9" field="33e2-d710-6ce4-cf41">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="1a76-3354-914a-4b74" shared="true" childName="Recon Trooper w/ pistol"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" value="9" field="5cae-94c7-b35f-b00e">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="45c9-b4a4-0271-1e88" shared="true" childName="Recon Trooper w/ missile launcher"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="1a76-3354-914a-4b74" shared="true" childName="Recon Trooper w/ pistol"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
