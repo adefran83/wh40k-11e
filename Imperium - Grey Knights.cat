@@ -4577,6 +4577,9 @@
                   <entryLinks>
                     <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="18a0-c70f-d6ca-976c" targetId="d0e-7460-ee7b-660f"/>
                     <entryLink import="true" name="Psycannon" hidden="false" id="517a-4017-f5ba-2b94" type="selectionEntry" targetId="e520-9c7-d10c-897d" collective="true">
+                    <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                    </costs>
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23ae-fb4c-de4b-1859" includeChildSelections="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="885a-b6c9-fa79-111e" includeChildSelections="false"/>
@@ -4629,8 +4632,7 @@
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="dd39-6def-3e5c-2095" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
-
-        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="b3e7-9c1a-5d8f-2b4e" targetId="c440-b056-f09a-c88a" sortIndex="3"/>
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="c8a2-6f3d-1e9b-7c5a" targetId="c440-b056-f09a-c88a" sortIndex="2"/>
         <entryLink import="true" name="Crusade" hidden="false" id="6516-bb08-4fbb-b1be" type="selectionEntryGroup" targetId="1f2e-4c6b-19f2-30e0" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
