@@ -7635,7 +7635,6 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="true" field="hidden">
                   <modifier type="set" value="true" field="hidden">
                     <conditionGroups>
                       <conditionGroup type="or">
