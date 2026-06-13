@@ -7637,18 +7637,20 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
               <modifiers>
                   <modifier type="set" value="true" field="hidden">
                     <conditionGroups>
-                      <conditionGroup type="or">
-                        <conditions>
-                          <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="8084-5bdd-7c6-bae4" shared="true" includeChildSelections="true"/>
-                        </conditions>
-                        <conditionGroups>
-                          <conditionGroup type="and">
-                            <conditions>
-                              <condition type="atLeast" value="1" field="selections" scope="roster" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                              <condition type="lessThan" value="1" field="selections" scope="parent" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                            </conditions>
-                          </conditionGroup>
-                        </conditionGroups>
+                                  <conditionGroup type="or">
+                                    <conditionGroups>
+                                      <conditionGroup type="and">
+                                        <conditions>
+                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                                        </conditions>
+                                      </conditionGroup>
+                                    </conditionGroups>
+                                    <conditions>
+                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="8084-5bdd-7c6-bae4" shared="true" includeChildSelections="true"/>
+                                    </conditions>
+                                  </conditionGroup>
+                                </conditionGroups>
                       </modifier>
                     </modifiers>
                     <costs>
@@ -7669,20 +7671,21 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
                     </profiles>
                     <modifiers>
                       <modifier type="set" value="true" field="hidden">
-                        <modifier type="set" value="true" field="hidden">
                           <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                              <conditionGroups>
-                                <conditionGroup type="and">
-                                  <conditions>
-                                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
+                                  <conditionGroup type="or">
+                                    <conditionGroups>
+                                      <conditionGroup type="and">
+                                        <conditions>
+                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                                        </conditions>
+                                      </conditionGroup>
+                                    </conditionGroups>
+                                    <conditions>
+                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
+                                    </conditions>
+                                  </conditionGroup>
+                                </conditionGroups>
                             </modifier>
                           </modifiers>
                           <costs>
