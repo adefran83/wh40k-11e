@@ -7656,7 +7656,7 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
               <profiles>
                 <profile name="PSYCHIC CELERITY" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f1b8-7e2d-3c9a-5f4b">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. While the bearer is on the battlefield or in Strategic Reserves, add 1 to the number of units from your army that you can select for the Gate of Infinity rule.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">TERMINATOR model only. This unit has +1 to charge rolls.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7687,7 +7687,7 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
                   <conditionGroup type="and">
                     <conditions>
                       <condition type="lessThan" value="1" field="selections" scope="roster" childId="d564-3284-bf44-b873" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="acd1-169d-85a6-95fc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="d7f4-2b5e-9a3c-6d1b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     </conditions>
                   </conditionGroup>
                 </conditionGroups>
@@ -8060,7 +8060,7 @@ have the [LETHAL HITS] ability.</description>
           </selectionEntry>
           <selectionEntry type="upgrade" import="true" name="Argent Assault + Fire of Purgation" hidden="false" id="a7f2-3e8b-9c1d-5f6a">
             <rules>
-              <rule name="Argent Assault + Fire of Purgation" id="acd1-169d-85a6-95fc" hidden="false">
+              <rule name="Argent Assault + Fire of Purgation" id="d7f4-2b5e-9a3c-6d1b" hidden="false">
                 <description>When a friendly PALADIN SQUAD unit is selected to fight, if the S of those attacks is lower than the T of the target, those attacks have +1 to wound rolls.
 
 When you select a unit to be pinned by a friendly PURGATION SQUAD unit’s Righteous Persecution ability, that enemy unit makes a battle‑shock roll, with -1 to that battle‑shock roll.</description>
