@@ -4226,6 +4226,26 @@
         <infoLink name="Deep Strike" hidden="false" type="rule" id="733f-208f-7345-4c92" targetId="7cb5-dd6b-dd87-ad3b"/>
         <infoLink name="Invulnerable Save (4+)" hidden="false" type="profile" id="a6ad-579-5c78-6d6a" targetId="a343-738-c273-4e13"/>
       </infoLinks>
+      <selectionEntries>
+
+        <selectionEntry type="upgrade" import="true" name="PSYCHIC CELERITY" hidden="false" id="e6c3-1d9b-4a5f-7e2c">
+              <profiles>
+                <profile name="PSYCHIC CELERITY" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f1b8-7e2d-3c9a-5f4b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">TERMINATOR model only. This unit has +1 to charge rolls.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+            </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="3-9 Paladins" hidden="false" id="fc49-2cb9-b72-9890" defaultSelectionEntryId="d1b3-96e2-43e6-6bf4" sortIndex="3">
           <selectionEntries>
@@ -7635,386 +7655,352 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
                 </profile>
               </profiles>
               <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            <condition type="lessThan" value="1" field="selections" scope="parent" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="8084-5bdd-7c6-bae4" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+            </selectionEntry>
+
+
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditionGroups>
+                  <conditionGroup type="and">
+                    <conditions>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="d564-3284-bf44-b873" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="d7f4-2b5e-9a3c-6d1b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    </conditions>
+                  </conditionGroup>
+                </conditionGroups>
+              </modifier>
+            </modifiers>
+            <constraints>
+              <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d46-6bb2-155b-ce73" includeChildSelections="false" includeChildForces="false"/>
+              <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c820-b755-1958-392d" includeChildForces="true" includeChildSelections="true"/>
+            </constraints>
+          </selectionEntryGroup>
+          <selectionEntryGroup name="Hallowed Conclave" id="b336-d7e3-7d0a-0181" hidden="false" collapsible="true">
+            <selectionEntries>
+              <selectionEntry type="upgrade" import="true" name="INESCAPABLE JUDGEMENT (PSYCHIC)" hidden="false" id="4e36-20cd-5b1f-1226">
+                <profiles>
+                  <profile name="INESCAPABLE JUDGEMENT (PSYCHIC)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a8f-28fc-2998-a004">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Each time an enemy unit within Engagement Range of the bearer&apos;s unit Falls Back, the bearer can use this Enhancement. If it does, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds. These mortal wounds are Psychic Attacks.</characteristic>
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
                   <modifier type="set" value="true" field="hidden">
                     <conditionGroups>
-                                  <conditionGroup type="or">
-                                    <conditionGroups>
-                                      <conditionGroup type="and">
-                                        <conditions>
-                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="d2a5-8b1f-6e4c-9d3a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                        </conditions>
-                                      </conditionGroup>
-                                    </conditionGroups>
-                                    <conditions>
-                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="8084-5bdd-7c6-bae4" shared="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                      </modifier>
-                    </modifiers>
-                    <costs>
-                      <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                      <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                      <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                      <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                      <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                    </costs>
-                  </selectionEntry>
-                  <selectionEntry type="upgrade" import="true" name="PSYCHIC CELERITY" hidden="false" id="e6c3-1d9b-4a5f-7e2c">
-                    <profiles>
-                      <profile name="PSYCHIC CELERITY" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f1b8-7e2d-3c9a-5f4b">
-                        <characteristics>
-                          <characteristic name="Description" typeId="9b8f-694b-e5e-b573">TERMINATOR model only. This unit has +1 to charge rolls.</characteristic>
-                        </characteristics>
-                      </profile>
-                    </profiles>
-                    <modifiers>
-                      <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                                  <conditionGroup type="or">
-                                    <conditionGroups>
-                                      <conditionGroup type="and">
-                                        <conditions>
-                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                        </conditions>
-                                      </conditionGroup>
-                                    </conditionGroups>
-                                    <conditions>
-                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                            </modifier>
-                          </modifiers>
-                          <costs>
-                            <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                            <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                            <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                            <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                            <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                          </costs>
-                        </selectionEntry>
-
-                        <modifiers>
-                          <modifier type="set" value="true" field="hidden">
-                            <conditionGroups>
-                              <conditionGroup type="and">
-                                <conditions>
-                                  <condition type="lessThan" value="1" field="selections" scope="roster" childId="d564-3284-bf44-b873" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                  <condition type="lessThan" value="1" field="selections" scope="roster" childId="d7f4-2b5e-9a3c-6d1b" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                </conditions>
-                              </conditionGroup>
-                            </conditionGroups>
-                          </modifier>
-                        </modifiers>
-                        <constraints>
-                          <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d46-6bb2-155b-ce73" includeChildSelections="false" includeChildForces="false"/>
-                          <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c820-b755-1958-392d" includeChildForces="true" includeChildSelections="true"/>
-                        </constraints>
-                      </selectionEntryGroup>
-                      <selectionEntryGroup name="Hallowed Conclave" id="b336-d7e3-7d0a-0181" hidden="false" collapsible="true">
-                        <selectionEntries>
-                          <selectionEntry type="upgrade" import="true" name="INESCAPABLE JUDGEMENT (PSYCHIC)" hidden="false" id="4e36-20cd-5b1f-1226">
-                            <profiles>
-                              <profile name="INESCAPABLE JUDGEMENT (PSYCHIC)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2a8f-28fc-2998-a004">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Each time an enemy unit within Engagement Range of the bearer&apos;s unit Falls Back, the bearer can use this Enhancement. If it does, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D3+3 mortal wounds. These mortal wounds are Psychic Attacks.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="and">
-                                    <conditions>
-                                      <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e36-20cd-5b1f-1226" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                      <condition type="lessThan" value="1" field="selections" scope="parent" childId="4e36-20cd-5b1f-1226" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
-                            </costs>
-                          </selectionEntry>
-                          <selectionEntry type="upgrade" import="true" name="NEMESIS ROUNDS" hidden="false" id="b6bc-d38b-ffa5-0a1f">
-                            <profiles>
-                              <profile name="NEMESIS ROUNDS" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f889-36e7-a357-0d20">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS TERMINATOR model only. Each time you target the bearer&apos;s unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="or">
-                                    <conditionGroups>
-                                      <conditionGroup type="and">
-                                        <conditions>
-                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                        </conditions>
-                                      </conditionGroup>
-                                    </conditionGroups>
-                                    <conditions>
-                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                              <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                              <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                              <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                              <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                            </costs>
-                          </selectionEntry>
-                          <selectionEntry type="upgrade" import="true" name="SANCTIC REAPER" hidden="false" id="b147-3134-f172-976d">
-                            <profiles>
-                              <profile name="SANCTIC REAPER" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2e5-2b03-d5a3-d195">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS TERMINATOR model only. Add 3 to the Attacks characteristic of the bearer&apos;s melee weapons.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="or">
-                                    <conditions>
-                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
-                                    </conditions>
-                                    <conditionGroups>
-                                      <conditionGroup type="and">
-                                        <conditions>
-                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                        </conditions>
-                                      </conditionGroup>
-                                    </conditionGroups>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                            </costs>
-                          </selectionEntry>
-                          <selectionEntry type="upgrade" import="true" name="EYE OF THE AUGURIUM" hidden="false" id="118d-6a42-fa1f-55d3">
-                            <profiles>
-                              <profile name="EYE OF THE AUGURIUM" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4597-63d8-39ad-970e">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Once per battle round, the bearer can use this Enhancement. If it does, you can target the bearer&apos;s unit with the Fire Overwatch or Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with
+                      <conditionGroup type="and">
+                        <conditions>
+                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e36-20cd-5b1f-1226" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="4e36-20cd-5b1f-1226" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        </conditions>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                </costs>
+              </selectionEntry>
+              <selectionEntry type="upgrade" import="true" name="NEMESIS ROUNDS" hidden="false" id="b6bc-d38b-ffa5-0a1f">
+                <profiles>
+                  <profile name="NEMESIS ROUNDS" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f889-36e7-a357-0d20">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS TERMINATOR model only. Each time you target the bearer&apos;s unit with the Fire Overwatch Stratagem, hits are scored on unmodified Hit rolls of 5+ while resolving that Stratagem.</characteristic>
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
+                  <modifier type="set" value="true" field="hidden">
+                    <conditionGroups>
+                      <conditionGroup type="or">
+                        <conditionGroups>
+                          <conditionGroup type="and">
+                            <conditions>
+                              <condition type="atLeast" value="1" field="selections" scope="roster" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              <condition type="lessThan" value="1" field="selections" scope="parent" childId="b6bc-d38b-ffa5-0a1f" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            </conditions>
+                          </conditionGroup>
+                        </conditionGroups>
+                        <conditions>
+                          <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
+                        </conditions>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                  <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                  <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                  <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                  <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                </costs>
+              </selectionEntry>
+              <selectionEntry type="upgrade" import="true" name="SANCTIC REAPER" hidden="false" id="b147-3134-f172-976d">
+                <profiles>
+                  <profile name="SANCTIC REAPER" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a2e5-2b03-d5a3-d195">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS TERMINATOR model only. Add 3 to the Attacks characteristic of the bearer&apos;s melee weapons.</characteristic>
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
+                  <modifier type="set" value="true" field="hidden">
+                    <conditionGroups>
+                      <conditionGroup type="or">
+                        <conditions>
+                          <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true" includeChildSelections="true"/>
+                        </conditions>
+                        <conditionGroups>
+                          <conditionGroup type="and">
+                            <conditions>
+                              <condition type="atLeast" value="1" field="selections" scope="roster" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              <condition type="lessThan" value="1" field="selections" scope="parent" childId="b147-3134-f172-976d" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            </conditions>
+                          </conditionGroup>
+                        </conditionGroups>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                </costs>
+              </selectionEntry>
+              <selectionEntry type="upgrade" import="true" name="EYE OF THE AUGURIUM" hidden="false" id="118d-6a42-fa1f-55d3">
+                <profiles>
+                  <profile name="EYE OF THE AUGURIUM" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4597-63d8-39ad-970e">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Once per battle round, the bearer can use this Enhancement. If it does, you can target the bearer&apos;s unit with the Fire Overwatch or Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with
 that Stratagem this turn.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="and">
-                                    <conditions>
-                                      <condition type="atLeast" value="1" field="selections" scope="roster" childId="118d-6a42-fa1f-55d3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                      <condition type="lessThan" value="1" field="selections" scope="parent" childId="118d-6a42-fa1f-55d3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                              <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                              <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                              <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                              <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                            </costs>
-                          </selectionEntry>
-                        </selectionEntries>
-                        <modifiers>
-                          <modifier type="set" value="true" field="hidden">
-                            <conditionGroups>
-                              <conditionGroup type="and">
-                                <conditions>
-                                  <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                  <condition type="lessThan" value="1" field="selections" scope="roster" childId="66e4-3e95-28e7-f978" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                </conditions>
-                              </conditionGroup>
-                            </conditionGroups>
-                          </modifier>
-                        </modifiers>
-                        <constraints>
-                          <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6050-487c-3e7a-de63" includeChildSelections="false" includeChildForces="false"/>
-                          <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="6159-1b58-d32d-973e" includeChildForces="true" includeChildSelections="true"/>
-                        </constraints>
-                      </selectionEntryGroup>
-                      <selectionEntryGroup name="Sanctic Spearhead" id="ad8f-0c7f-014c-df4f" hidden="false" collapsible="true">
-                        <selectionEntries>
-                          <selectionEntry type="upgrade" import="true" name="QUICKENING FOCI" hidden="false" id="e5bd-814b-3e4a-ad62">
-                            <profiles>
-                              <profile name="QUICKENING FOCI" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a98f-281b-65e5-e76f">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS INFANTRY model only. In your Movement phase, each time the bearer&apos;s unit disembarks from a TRANSPORT, until the end of the turn, you can re-roll Charge rolls made for that unit.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="or">
-                                    <conditionGroups>
-                                      <conditionGroup type="and">
-                                        <conditions>
-                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                        </conditions>
-                                      </conditionGroup>
-                                    </conditionGroups>
-                                    <conditions>
-                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
-                              <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                              <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                              <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                              <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                            </costs>
-                          </selectionEntry>
-                          <selectionEntry type="upgrade" import="true" name="SPIRITUS MACHINA" hidden="false" id="7d23-79c6-49c3-cc23">
-                            <profiles>
-                              <profile name="SPIRITUS MACHINA" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="60b3-b46f-25a2-0cfa">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS INFANTRY model only. In your Shooting phase, each time the bearer&apos;s unit is selected to shoot, if the bearer&apos;s unit disembarked from a TRANSPORT this turn, until the end of the phase, each time a model in the bearer&apos;s unit makes an attack, you can re-roll the Wound roll.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="or">
-                                    <conditions>
-                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
-                                    </conditions>
-                                    <conditionGroups>
-                                      <conditionGroup type="and">
-                                        <conditions>
-                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                        </conditions>
-                                      </conditionGroup>
-                                    </conditionGroups>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
-                              <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                              <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                              <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                              <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                            </costs>
-                          </selectionEntry>
-                          <selectionEntry type="upgrade" import="true" name="SIGIL OF EXIGENCE" hidden="false" id="9424-0c51-f560-315a">
-                            <profiles>
-                              <profile name="SIGIL OF EXIGENCE" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d1a3-7e42-dc28-4625">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Once per battle, in your opponent&apos;s Shooting phase, when the bearer&apos;s unit is selected as the target of a ranged attack, you can remove the bearer&apos;s unit from the battlefield and then set it back up again anywhere on the battlefield that is
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
+                  <modifier type="set" value="true" field="hidden">
+                    <conditionGroups>
+                      <conditionGroup type="and">
+                        <conditions>
+                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="118d-6a42-fa1f-55d3" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="118d-6a42-fa1f-55d3" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        </conditions>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                  <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                  <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                  <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                  <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                </costs>
+              </selectionEntry>
+            </selectionEntries>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditionGroups>
+                  <conditionGroup type="and">
+                    <conditions>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="66e4-3e95-28e7-f978" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    </conditions>
+                  </conditionGroup>
+                </conditionGroups>
+              </modifier>
+            </modifiers>
+            <constraints>
+              <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6050-487c-3e7a-de63" includeChildSelections="false" includeChildForces="false"/>
+              <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="6159-1b58-d32d-973e" includeChildForces="true" includeChildSelections="true"/>
+            </constraints>
+          </selectionEntryGroup>
+          <selectionEntryGroup name="Sanctic Spearhead" id="ad8f-0c7f-014c-df4f" hidden="false" collapsible="true">
+            <selectionEntries>
+              <selectionEntry type="upgrade" import="true" name="QUICKENING FOCI" hidden="false" id="e5bd-814b-3e4a-ad62">
+                <profiles>
+                  <profile name="QUICKENING FOCI" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a98f-281b-65e5-e76f">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS INFANTRY model only. In your Movement phase, each time the bearer&apos;s unit disembarks from a TRANSPORT, until the end of the turn, you can re-roll Charge rolls made for that unit.</characteristic>
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
+                  <modifier type="set" value="true" field="hidden">
+                    <conditionGroups>
+                      <conditionGroup type="or">
+                        <conditionGroups>
+                          <conditionGroup type="and">
+                            <conditions>
+                              <condition type="atLeast" value="1" field="selections" scope="roster" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              <condition type="lessThan" value="1" field="selections" scope="parent" childId="e5bd-814b-3e4a-ad62" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            </conditions>
+                          </conditionGroup>
+                        </conditionGroups>
+                        <conditions>
+                          <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
+                        </conditions>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                  <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                  <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                  <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                  <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                </costs>
+              </selectionEntry>
+              <selectionEntry type="upgrade" import="true" name="SPIRITUS MACHINA" hidden="false" id="7d23-79c6-49c3-cc23">
+                <profiles>
+                  <profile name="SPIRITUS MACHINA" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="60b3-b46f-25a2-0cfa">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS INFANTRY model only. In your Shooting phase, each time the bearer&apos;s unit is selected to shoot, if the bearer&apos;s unit disembarked from a TRANSPORT this turn, until the end of the phase, each time a model in the bearer&apos;s unit makes an attack, you can re-roll the Wound roll.</characteristic>
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
+                  <modifier type="set" value="true" field="hidden">
+                    <conditionGroups>
+                      <conditionGroup type="or">
+                        <conditions>
+                          <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="cf47-a0d7-7207-29dc" shared="true" includeChildSelections="true"/>
+                        </conditions>
+                        <conditionGroups>
+                          <conditionGroup type="and">
+                            <conditions>
+                              <condition type="atLeast" value="1" field="selections" scope="roster" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d23-79c6-49c3-cc23" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            </conditions>
+                          </conditionGroup>
+                        </conditionGroups>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                  <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                  <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                  <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                  <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                </costs>
+              </selectionEntry>
+              <selectionEntry type="upgrade" import="true" name="SIGIL OF EXIGENCE" hidden="false" id="9424-0c51-f560-315a">
+                <profiles>
+                  <profile name="SIGIL OF EXIGENCE" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d1a3-7e42-dc28-4625">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. Once per battle, in your opponent&apos;s Shooting phase, when the bearer&apos;s unit is selected as the target of a ranged attack, you can remove the bearer&apos;s unit from the battlefield and then set it back up again anywhere on the battlefield that is
 more than 9&quot; horizontally away from all enemy units. If the bearer&apos;s unit is no longer an eligible target, your opponent can then select new targets for any attacks that had targeted the bearer&apos;s unit.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="and">
-                                    <conditions>
-                                      <condition type="atLeast" value="1" field="selections" scope="roster" childId="9424-0c51-f560-315a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                      <condition type="lessThan" value="1" field="selections" scope="parent" childId="9424-0c51-f560-315a" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
-                              <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                              <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                              <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                              <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                            </costs>
-                          </selectionEntry>
-                          <selectionEntry type="upgrade" import="true" name="DRIVEN BY DUTY" hidden="false" id="e3b2-4338-6d73-d007">
-                            <profiles>
-                              <profile name="DRIVEN BY DUTY" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b406-94a3-9b13-4062">
-                                <characteristics>
-                                  <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS WALKER model only. Each time the bearer&apos;s unit Piles In or Consolidates, the bearer can move up to 6&quot; instead of up to 3&quot;.</characteristic>
-                                </characteristics>
-                              </profile>
-                            </profiles>
-                            <modifiers>
-                              <modifier type="set" value="true" field="hidden">
-                                <conditionGroups>
-                                  <conditionGroup type="or">
-                                    <conditionGroups>
-                                      <conditionGroup type="and">
-                                        <conditions>
-                                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                                        </conditions>
-                                      </conditionGroup>
-                                    </conditionGroups>
-                                    <conditions>
-                                      <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="true"/>
-                                    </conditions>
-                                  </conditionGroup>
-                                </conditionGroups>
-                              </modifier>
-                            </modifiers>
-                            <costs>
-                              <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
-                              <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-                              <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-                              <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-                              <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-                            </costs>
-                          </selectionEntry>
-                        </selectionEntries>
-                        <modifiers>
-                          <modifier type="set" value="true" field="hidden">
-                            <conditionGroups>
-                              <conditionGroup type="and">
-                                <conditions>
-                                  <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                  <condition type="lessThan" value="1" field="selections" scope="roster" childId="1d5f-079f-a3d9-beb6" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                                </conditions>
-                              </conditionGroup>
-                            </conditionGroups>
-                          </modifier>
-                        </modifiers>
-                        <constraints>
-                          <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eb6-367a-d406-12af" includeChildSelections="false" includeChildForces="false"/>
-                          <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c939-6068-4e8a-ee01" includeChildForces="true" includeChildSelections="true"/>
-                        </constraints>
-                      </selectionEntryGroup>
-                    </selectionEntryGroups>
-                  </selectionEntryGroup>
-                  <selectionEntryGroup name="Detachments" hidden="false" id="f7f3-a061-3f69-1432" defaultSelectionEntryId="none">
-                    <selectionEntries>
-                      <selectionEntry type="upgrade" import="true" name="Warpbane Task Force" hidden="false" id="ce9d-e896-d9bc-767c">
-                        <rules>
-                          <rule name="Hallowed Ground" id="9872-36bc-6295-dd34" hidden="false">
-                            <description>Certain areas of the battlefield are within your army&apos;s Hallowed Ground, as follows:
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
+                  <modifier type="set" value="true" field="hidden">
+                    <conditionGroups>
+                      <conditionGroup type="and">
+                        <conditions>
+                          <condition type="atLeast" value="1" field="selections" scope="roster" childId="9424-0c51-f560-315a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                          <condition type="lessThan" value="1" field="selections" scope="parent" childId="9424-0c51-f560-315a" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        </conditions>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                  <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                  <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                  <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                  <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                </costs>
+              </selectionEntry>
+              <selectionEntry type="upgrade" import="true" name="DRIVEN BY DUTY" hidden="false" id="e3b2-4338-6d73-d007">
+                <profiles>
+                  <profile name="DRIVEN BY DUTY" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b406-94a3-9b13-4062">
+                    <characteristics>
+                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS WALKER model only. Each time the bearer&apos;s unit Piles In or Consolidates, the bearer can move up to 6&quot; instead of up to 3&quot;.</characteristic>
+                    </characteristics>
+                  </profile>
+                </profiles>
+                <modifiers>
+                  <modifier type="set" value="true" field="hidden">
+                    <conditionGroups>
+                      <conditionGroup type="or">
+                        <conditionGroups>
+                          <conditionGroup type="and">
+                            <conditions>
+                              <condition type="atLeast" value="1" field="selections" scope="roster" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                              <condition type="lessThan" value="1" field="selections" scope="parent" childId="e3b2-4338-6d73-d007" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                            </conditions>
+                          </conditionGroup>
+                        </conditionGroups>
+                        <conditions>
+                          <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6dda-e157-334d-e93a" shared="true" includeChildSelections="true"/>
+                        </conditions>
+                      </conditionGroup>
+                    </conditionGroups>
+                  </modifier>
+                </modifiers>
+                <costs>
+                  <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                  <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                  <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                  <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                  <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+                </costs>
+              </selectionEntry>
+            </selectionEntries>
+            <modifiers>
+              <modifier type="set" value="true" field="hidden">
+                <conditionGroups>
+                  <conditionGroup type="and">
+                    <conditions>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="1d5f-079f-a3d9-beb6" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    </conditions>
+                  </conditionGroup>
+                </conditionGroups>
+              </modifier>
+            </modifiers>
+            <constraints>
+              <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eb6-367a-d406-12af" includeChildSelections="false" includeChildForces="false"/>
+              <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c939-6068-4e8a-ee01" includeChildForces="true" includeChildSelections="true"/>
+            </constraints>
+          </selectionEntryGroup>
+        </selectionEntryGroups>
+      </selectionEntryGroup>
+      <selectionEntryGroup name="Detachments" hidden="false" id="f7f3-a061-3f69-1432" defaultSelectionEntryId="none">
+        <selectionEntries>
+          <selectionEntry type="upgrade" import="true" name="Warpbane Task Force" hidden="false" id="ce9d-e896-d9bc-767c">
+            <rules>
+              <rule name="Hallowed Ground" id="9872-36bc-6295-dd34" hidden="false">
+                <description>Certain areas of the battlefield are within your army&apos;s Hallowed Ground, as follows:
 
 - Your deployment zone is always within your army&apos;s Hallowed Ground.
 
@@ -8025,28 +8011,28 @@ more than 9&quot; horizontally away from all enemy units. If the bearer&apos;s 
 - At the start of any phase, if you control at least half of the objective markers within your opponent’s deployment zone, until the end of that phase, your opponent’s deployment zone is within your army’s Hallowed Ground.
 
 Each time a model in a **^^Grey Knights^^** unit from your army makes an attack that targets a visible target, re roll a Hit roll of 1. If that unit is a **^^Purifier Squad^^** and/or is wholly within your army’s Hallowed Ground, you can re roll the Hit roll instead.</description>
-                          </rule>
-                        </rules>
-                      </selectionEntry>
-                      <selectionEntry type="upgrade" import="true" name="Augurium Task Force" hidden="false" id="c3fc-b175-00e7-16c7">
-                        <rules>
-                          <rule name="Augurium Task Force" id="0a74-82ac-b75f-9d1a" hidden="false">
-                            <description>From the second battle round onwards, at the start of your Movement phase, if you did not select the maximum number
+              </rule>
+            </rules>
+          </selectionEntry>
+          <selectionEntry type="upgrade" import="true" name="Augurium Task Force" hidden="false" id="c3fc-b175-00e7-16c7">
+            <rules>
+              <rule name="Augurium Task Force" id="0a74-82ac-b75f-9d1a" hidden="false">
+                <description>From the second battle round onwards, at the start of your Movement phase, if you did not select the maximum number
 of GREY KNIGHTS units from your army using the Gate of Infinity ability at the end of your opponent&apos;s previous turn, you can select one GREY KNIGHTS unit from your army that is on the battlefield that could have been selected using the Gate of Infinity ability. Remove that unit from the battlefield and place it into Strategic Reserves.</description>
-                          </rule>
-                        </rules>
-                      </selectionEntry>
-                      <selectionEntry type="upgrade" import="true" name="Sanctic Spearhead" hidden="false" id="1d5f-079f-a3d9-beb6">
-                        <rules>
-                          <rule name="Sanctic Spearhead" id="cd89-9804-9254-70e6" hidden="false">
-                            <description>Each time a GREY KNIGHTS VEHICLE unit from your army Advances, do not make an Advance roll for it; until the end of the phase, add 6&quot; to the Move characteristic of models in that unit, and until the end of the turn, ranged weapons equipped by models in that unit have the [ASSAULT] ability.</description>
-                          </rule>
-                        </rules>
-                      </selectionEntry>
-                      <selectionEntry type="upgrade" import="true" name="Banishers" hidden="false" id="ca26-bdf1-e780-1ed3">
-                        <rules>
-                          <rule name="Banisher" id="d382-33c1-8b8a-dca3" hidden="false">
-                            <description>Each time a GREY KNIGHTS unit from your army is selected to fight, that unit can take a Leadership test. If that test is passed, select one of the  following rules. Until the end of the phase, that unit has that rule.
+              </rule>
+            </rules>
+          </selectionEntry>
+          <selectionEntry type="upgrade" import="true" name="Sanctic Spearhead" hidden="false" id="1d5f-079f-a3d9-beb6">
+            <rules>
+              <rule name="Sanctic Spearhead" id="cd89-9804-9254-70e6" hidden="false">
+                <description>Each time a GREY KNIGHTS VEHICLE unit from your army Advances, do not make an Advance roll for it; until the end of the phase, add 6&quot; to the Move characteristic of models in that unit, and until the end of the turn, ranged weapons equipped by models in that unit have the [ASSAULT] ability.</description>
+              </rule>
+            </rules>
+          </selectionEntry>
+          <selectionEntry type="upgrade" import="true" name="Banishers" hidden="false" id="ca26-bdf1-e780-1ed3">
+            <rules>
+              <rule name="Banisher" id="d382-33c1-8b8a-dca3" hidden="false">
+                <description>Each time a GREY KNIGHTS unit from your army is selected to fight, that unit can take a Leadership test. If that test is passed, select one of the  following rules. Until the end of the phase, that unit has that rule.
 
 
 Melee weapons equipped by models in
@@ -8057,164 +8043,164 @@ have the [SUSTAINED HITS 1] ability.
 Melee weapons equipped by models in
 this unit with the [PSYCHIC] ability also
 have the [LETHAL HITS] ability.</description>
-                          </rule>
-                        </rules>
-                      </selectionEntry>
-                      <selectionEntry type="upgrade" import="true" name="Hallowed Conclave" hidden="false" id="66e4-3e95-28e7-f978">
-                        <rules>
-                          <rule name="Hallowed Conclave" id="6f23-5591-c236-f5ef" hidden="false">
-                            <description>GREY KNIGHTS TERMINATOR units from your army are eligible to shoot and declare a charge in a turn in which they Fell Back.</description>
-                          </rule>
-                        </rules>
-                      </selectionEntry>
-                      <selectionEntry type="upgrade" import="true" name="Brotherhood Strike" hidden="false" id="2754-4ada-b9fd-702f">
-                        <rules>
-                          <rule name="Brotherhood Strike" id="acd1-169d-85a6-95fc" hidden="false">
-                            <description>Each time a unit from your army is set up using the Deep Strike ability, until the end of the turn, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</description>
-                          </rule>
-                        </rules>
-                      </selectionEntry>
-                      <selectionEntry type="upgrade" import="true" name="Argent Assault + Fire of Purgation" hidden="false" id="a7f2-3e8b-9c1d-5f6a">
-                        <rules>
-                          <rule name="Argent Assault + Fire of Purgation" id="d7f4-2b5e-9a3c-6d1b" hidden="false">
-                            <description>When a friendly PALADIN SQUAD unit is selected to fight, if the S of those attacks is lower than the T of the target, those attacks have +1 to wound rolls.
+              </rule>
+            </rules>
+          </selectionEntry>
+          <selectionEntry type="upgrade" import="true" name="Hallowed Conclave" hidden="false" id="66e4-3e95-28e7-f978">
+            <rules>
+              <rule name="Hallowed Conclave" id="6f23-5591-c236-f5ef" hidden="false">
+                <description>GREY KNIGHTS TERMINATOR units from your army are eligible to shoot and declare a charge in a turn in which they Fell Back.</description>
+              </rule>
+            </rules>
+          </selectionEntry>
+          <selectionEntry type="upgrade" import="true" name="Brotherhood Strike" hidden="false" id="2754-4ada-b9fd-702f">
+            <rules>
+              <rule name="Brotherhood Strike" id="acd1-169d-85a6-95fc" hidden="false">
+                <description>Each time a unit from your army is set up using the Deep Strike ability, until the end of the turn, each time a model in that unit makes an attack, re-roll a Hit roll of 1 and re-roll a Wound roll of 1.</description>
+              </rule>
+            </rules>
+          </selectionEntry>
+          <selectionEntry type="upgrade" import="true" name="Argent Assault + Fire of Purgation" hidden="false" id="a7f2-3e8b-9c1d-5f6a">
+            <rules>
+              <rule name="Argent Assault + Fire of Purgation" id="d7f4-2b5e-9a3c-6d1b" hidden="false">
+                <description>When a friendly PALADIN SQUAD unit is selected to fight, if the S of those attacks is lower than the T of the target, those attacks have +1 to wound rolls.
 
 When you select a unit to be pinned by a friendly PURGATION SQUAD unit’s Righteous Persecution ability, that enemy unit makes a battle‑shock roll, with -1 to that battle‑shock roll.</description>
-                          </rule>
-                        </rules>
-                      </selectionEntry>
-                    </selectionEntries>
-                  </selectionEntryGroup>
-                  <selectionEntryGroup name="Crusade" id="1f2e-4c6b-19f2-30e0" hidden="false" collapsible="true">
-                    <entryLinks>
-                      <entryLink import="true" name="Experience Points" hidden="false" id="dca1-46c4-64a2-c8fc" type="selectionEntry" targetId="2dbf-4d49-5d74-85c9"/>
-                      <entryLink import="true" name="Legendary Veterans" hidden="false" id="8e50-a693-92ad-4d3b" type="selectionEntry" targetId="1511-18fe-f51e-7b9d"/>
-                      <entryLink import="true" name="Weapon Modifications" hidden="false" id="ed73-c30e-3cbe-a06c" type="selectionEntry" targetId="d1a5-4297-168b-11cd"/>
-                      <entryLink import="true" name="Battle Scars" hidden="false" id="5e0c-50c6-8392-1c32" type="selectionEntryGroup" targetId="1576-e816-033f-828d"/>
-                      <entryLink import="true" name="Battle Traits" hidden="false" id="4c56-9a7b-d96e-bc3e" type="selectionEntryGroup" targetId="0511-d9ad-2978-2234">
-                        <entryLinks>
-                          <entryLink import="true" name="Codex Battle Traits" hidden="false" id="7b25-5fcf-2449-78a0" type="selectionEntryGroup" targetId="c765-ba7b-71b4-4bb6"/>
-                        </entryLinks>
-                      </entryLink>
-                      <entryLink import="true" name="Crusade Relics" hidden="false" id="bec3-6945-70d1-4d25" type="selectionEntryGroup" targetId="e919-5b46-974d-a5b1">
-                        <entryLinks>
-                          <entryLink import="true" name="Codex Relics" hidden="false" id="6bf4-3101-84dc-33a8" type="selectionEntryGroup" targetId="9a61-74f5-f4f8-4d78"/>
-                        </entryLinks>
-                      </entryLink>
-                    </entryLinks>
-                    <modifiers>
-                      <modifier type="set" value="true" field="hidden">
-                        <conditions>
-                          <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                        </conditions>
-                      </modifier>
-                    </modifiers>
-                    <comment>Crusade content</comment>
-                  </selectionEntryGroup>
-                  <selectionEntryGroup name="Codex Battle Traits" id="c765-ba7b-71b4-4bb6" hidden="false">
-                    <comment>Crusade content</comment>
-                  </selectionEntryGroup>
-                  <selectionEntryGroup name="Codex Relics" id="9a61-74f5-f4f8-4d78" hidden="false">
-                    <comment>Crusade content</comment>
-                  </selectionEntryGroup>
-                </sharedSelectionEntryGroups>
-                <entryLinks>
-                  <entryLink import="true" name="Brotherhood Champion" hidden="false" type="selectionEntry" id="b391-1ca8-ca39-ece7" targetId="2c81-4e74-8707-3117"/>
-                  <entryLink import="true" name="Brotherhood Chaplain" hidden="false" type="selectionEntry" id="47d8-1a0a-e584-991" targetId="b9b1-d698-1e98-da45"/>
-                  <entryLink import="true" name="Brotherhood Librarian" hidden="false" type="selectionEntry" id="eb42-25e1-cb7-81e0" targetId="5412-1f01-b7cc-bf12"/>
-                  <entryLink import="true" name="Brotherhood Techmarine" hidden="false" type="selectionEntry" id="19bb-564d-866d-ff13" targetId="f667-5267-f241-37"/>
-                  <entryLink import="true" name="Brotherhood Terminator Squad" hidden="false" type="selectionEntry" id="1462-a777-45ab-a8b5" targetId="a037-a89c-f59f-8b1e"/>
-                  <entryLink import="true" name="Castellan Crowe" hidden="false" type="selectionEntry" id="5c7b-487d-a534-77bd" targetId="9ddb-760d-8cf7-1c8a"/>
-                  <entryLink import="true" name="Grand Master" hidden="false" type="selectionEntry" id="a304-8dfa-851c-b53d" targetId="1a56-706b-a8f1-631a"/>
-                  <entryLink import="true" name="Grand Master in Nemesis Dreadknight" hidden="false" type="selectionEntry" id="3066-9274-c887-86b" targetId="3625-f9f1-122b-bf9d"/>
-                  <entryLink import="true" name="Grand Master Voldus" hidden="false" type="selectionEntry" id="e3ba-ed19-bc91-81ee" targetId="7256-bb3a-3e79-31fe"/>
-                  <entryLink import="true" name="Grey Knights Land Raider" hidden="false" type="selectionEntry" id="99b4-6a62-b540-e864" targetId="512d-b972-911e-4cac"/>
-                  <entryLink import="true" name="Grey Knights Land Raider Crusader" hidden="false" type="selectionEntry" id="ed2d-a39d-c9e1-7e2e" targetId="4c63-cca-8d26-6330"/>
-                  <entryLink import="true" name="Grey Knights Land Raider Redeemer" hidden="false" type="selectionEntry" id="8d8f-b8f9-8344-ef40" targetId="ada7-eb0b-c920-d77f"/>
-                  <entryLink import="true" name="Grey Knights Razorback" hidden="false" type="selectionEntry" id="9d6b-4332-27c3-c669" targetId="841f-98b-fbf3-c8ee"/>
-                  <entryLink import="true" name="Grey Knights Rhino" hidden="false" type="selectionEntry" id="41e6-9a15-f40e-149f" targetId="5ffd-f698-a1bb-fba7"/>
-                  <entryLink import="true" name="Grey Knights Stormhawk Interceptor" hidden="false" type="selectionEntry" id="6906-148b-2d4a-f6cd" targetId="fa-e288-2107-d22e"/>
-                  <entryLink import="true" name="Grey Knights Stormraven Gunship" hidden="false" type="selectionEntry" id="9ad4-5c9e-4d7d-8ffd" targetId="2efe-459b-9562-e7a9"/>
-                  <entryLink import="true" name="Grey Knights Stormtalon Gunship" hidden="false" type="selectionEntry" id="98a2-a561-b183-56a" targetId="84ac-b9ea-921f-9082"/>
-                  <entryLink import="true" name="Grey Knights Venerable Dreadnought" hidden="false" type="selectionEntry" id="b24d-be83-c5fe-d3fc" targetId="bd43-b303-66e0-4c10"/>
-                  <entryLink import="true" name="Interceptor Squad" hidden="false" type="selectionEntry" id="a53-5d6c-8148-4393" targetId="d9f7-71b7-8e67-7f44"/>
-                  <entryLink import="true" name="Land Raider Banisher" hidden="false" type="selectionEntry" id="db7e-ce0-7ace-dc10" targetId="69d-a656-fde3-6c3e"/>
-                  <entryLink import="true" name="Nemesis Dreadknight" hidden="false" type="selectionEntry" id="9342-1cf-b2ab-b143" targetId="5458-a458-c51d-c4e9"/>
-                  <entryLink import="true" name="Paladin Squad" hidden="false" type="selectionEntry" id="1e9b-5681-eaf7-5e08" targetId="6528-4634-c2cf-2840"/>
-                  <entryLink import="true" name="Grey Knights Thunderhawk Gunship" hidden="false" type="selectionEntry" id="b257-3749-9bb2-4d4d" targetId="8989-2fd2-4d29-e795"/>
-                  <entryLink import="true" name="Purgation Squad" hidden="false" type="selectionEntry" id="8440-8405-d8ce-1592" targetId="e8ad-bd40-5952-6859"/>
-                  <entryLink import="true" name="Purifier Squad" hidden="false" type="selectionEntry" id="9893-e746-2796-740" targetId="8865-df22-1629-bf02"/>
-                  <entryLink import="true" name="Strike Squad" hidden="false" type="selectionEntry" id="45ef-125c-ae4f-394d" targetId="d81f-c9ac-e338-ba37"/>
-                  <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="b859-7064-3a1e-1577" targetId="c05f-e67a-d2db-b3de"/>
-                  <entryLink import="true" name="Grey Knights Relic Razorback [Legends]" hidden="false" type="selectionEntry" id="b234-2a9e-174d-90b3" targetId="54f0-4b3f-3abe-081b"/>
-                  <entryLink import="true" name="Grey Knights Dreadnought [Legends]" hidden="false" type="selectionEntry" id="4bb5-c50e-a835-38d1" targetId="28d0-5a52-501a-441d"/>
-                  <entryLink import="true" name="Show/Hide Options" hidden="false" type="selectionEntry" id="e4b-7fa2-e394-baff" targetId="e8ef-836a-a9d1-901d">
-                    <entryLinks>
-                      <entryLink import="true" name="Show Agents of the Imperium" hidden="false" type="selectionEntry" id="537-702c-e58c-86a3" targetId="e08b-2448-5606-fefb"/>
-                      <entryLink import="true" name="Show Imperial Knights" hidden="false" type="selectionEntry" id="e981-3288-d103-387d" targetId="e82c-6f8c-2b97-a287"/>
-                      <entryLink import="true" name="Show Titans" hidden="false" type="selectionEntry" id="e48a-8350-26a3-9971" targetId="f26b-79db-80e0-3a3b"/>
-                    </entryLinks>
-                  </entryLink>
-                  <entryLink import="true" name="Order of Battle" hidden="false" id="6d55-7518-ff2e-b9f5" type="selectionEntry" targetId="eda7-8b4b-3719-af36"/>
-                  <entryLink import="true" name="Brother-Captain" hidden="false" id="40a4-1786-686d-7735" targetId="dce9-6eb4-fa33-e869" type="selectionEntry"/>
-                </entryLinks>
-                <categoryEntries>
-                  <categoryEntry name="Brother-Captain" hidden="false" id="71ac-a100-1ec8-14e9"/>
-                  <categoryEntry name="Brother-Captain Stern" hidden="false" id="9e54-c14b-9ec9-e387"/>
-                  <categoryEntry name="Brotherhood Champion" hidden="false" id="c427-b327-40a0-a401"/>
-                  <categoryEntry name="Brotherhood Chaplain" hidden="false" id="ebf4-5ffe-19e7-c6c7"/>
-                  <categoryEntry name="Brotherhood Librarian" hidden="false" id="bd80-12a6-cd23-96c9"/>
-                  <categoryEntry name="Brotherhood Techmarine" hidden="false" id="c352-657f-d2cc-adcf"/>
-                  <categoryEntry name="Brotherhood Terminator Squad" hidden="false" id="cddf-ac1-4a0d-8e48"/>
-                  <categoryEntry name="Castellan Crowe" hidden="false" id="de95-1b68-44cf-7ca9"/>
-                  <categoryEntry name="Grand Master" hidden="false" id="ce31-227c-65ca-e27e"/>
-                  <categoryEntry name="Grand Master in Nemesis Dreadknight" hidden="false" id="a738-1a96-db57-ba6f"/>
-                  <categoryEntry name="Grand Master Voldus" hidden="false" id="472c-f807-880-b6"/>
-                  <categoryEntry name="Grey Knights Land Raider" hidden="false" id="adfb-534b-3eb7-2781"/>
-                  <categoryEntry name="Grey Knights Land Raider Crusader" hidden="false" id="4a04-1f1b-8ffb-b183"/>
-                  <categoryEntry name="Grey Knights Land Raider Redeemer" hidden="false" id="51dd-461e-1657-1017"/>
-                  <categoryEntry name="Grey Knights Razorback" hidden="false" id="88ad-5f29-ba09-9427"/>
-                  <categoryEntry name="Grey Knights Rhino" hidden="false" id="5ced-f445-91c2-a55e"/>
-                  <categoryEntry name="Grey Knights Stormhawk Interceptor" hidden="false" id="82f-4771-c58e-1755"/>
-                  <categoryEntry name="Grey Knights Stormraven Gunship" hidden="false" id="54b8-5bba-f749-e5ef"/>
-                  <categoryEntry name="Grey Knights Stormtalon Gunship" hidden="false" id="99eb-b003-79ba-7d46"/>
-                  <categoryEntry name="Grey Knights Thunderhawk Gunship" hidden="false" id="f580-2968-19f3-1320"/>
-                  <categoryEntry name="Grey Knights Venerable Dreadnought" hidden="false" id="33d4-b50a-18e8-16e8"/>
-                  <categoryEntry name="Interceptor Squad" hidden="false" id="b7d3-6b00-c657-ebd7"/>
-                  <categoryEntry name="Kaldor Draigo" hidden="false" id="77b6-bfe8-648b-9fb4"/>
-                  <categoryEntry name="Land Raider Banisher" hidden="false" id="3741-4bcf-f67e-1942"/>
-                  <categoryEntry name="Nemesis Dreadknight" hidden="false" id="8083-7b7a-c9d7-fd31"/>
-                  <categoryEntry name="Paladin Squad" hidden="false" id="9020-9fb5-8ef8-5ad4"/>
-                  <categoryEntry name="Purgation Squad" hidden="false" id="8084-5bdd-7c6-bae4"/>
-                  <categoryEntry name="Purifier Squad" hidden="false" id="67f8-444-b8b7-ad0"/>
-                  <categoryEntry name="Servitors" hidden="false" id="5bc8-a8b7-1c69-9043"/>
-                  <categoryEntry name="Strike Squad" hidden="false" id="103f-a8cd-8c1f-24df"/>
-                  <categoryEntry id="4c57-a2d1-fe45-4ec1" name="Grey Knights Dreadnought [Legends]" hidden="false"/>
-                  <categoryEntry id="6ee2-b8d8-f50b-67e3" name="Grey Knights Relic Razorback [Legends]" hidden="false"/>
-                </categoryEntries>
-                <sharedProfiles>
-                  <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df6-e949-835b-ad0d">
-                    <characteristics>
-                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
-                    </characteristics>
-                    <comment>4+ Single model</comment>
-                  </profile>
-                  <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a343-738-c273-4e13">
-                    <characteristics>
-                      <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has a 4+ Invulnerable Save</characteristic>
-                    </characteristics>
-                    <comment>4+ Unit</comment>
-                  </profile>
-                </sharedProfiles>
-                <rules>
-                  <rule name="Gate of Infinity" id="6a5e-1316-2d87-93c5" hidden="false">
-                    <description>If your Army Faction is **^^Grey Knights^^**, at the end of your opponent’s Fight phase, you can select a number of units from your army that are on the battlefield (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:
+              </rule>
+            </rules>
+          </selectionEntry>
+        </selectionEntries>
+      </selectionEntryGroup>
+      <selectionEntryGroup name="Crusade" id="1f2e-4c6b-19f2-30e0" hidden="false" collapsible="true">
+        <entryLinks>
+          <entryLink import="true" name="Experience Points" hidden="false" id="dca1-46c4-64a2-c8fc" type="selectionEntry" targetId="2dbf-4d49-5d74-85c9"/>
+          <entryLink import="true" name="Legendary Veterans" hidden="false" id="8e50-a693-92ad-4d3b" type="selectionEntry" targetId="1511-18fe-f51e-7b9d"/>
+          <entryLink import="true" name="Weapon Modifications" hidden="false" id="ed73-c30e-3cbe-a06c" type="selectionEntry" targetId="d1a5-4297-168b-11cd"/>
+          <entryLink import="true" name="Battle Scars" hidden="false" id="5e0c-50c6-8392-1c32" type="selectionEntryGroup" targetId="1576-e816-033f-828d"/>
+          <entryLink import="true" name="Battle Traits" hidden="false" id="4c56-9a7b-d96e-bc3e" type="selectionEntryGroup" targetId="0511-d9ad-2978-2234">
+            <entryLinks>
+              <entryLink import="true" name="Codex Battle Traits" hidden="false" id="7b25-5fcf-2449-78a0" type="selectionEntryGroup" targetId="c765-ba7b-71b4-4bb6"/>
+            </entryLinks>
+          </entryLink>
+          <entryLink import="true" name="Crusade Relics" hidden="false" id="bec3-6945-70d1-4d25" type="selectionEntryGroup" targetId="e919-5b46-974d-a5b1">
+            <entryLinks>
+              <entryLink import="true" name="Codex Relics" hidden="false" id="6bf4-3101-84dc-33a8" type="selectionEntryGroup" targetId="9a61-74f5-f4f8-4d78"/>
+            </entryLinks>
+          </entryLink>
+        </entryLinks>
+        <modifiers>
+          <modifier type="set" value="true" field="hidden">
+            <conditions>
+              <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+            </conditions>
+          </modifier>
+        </modifiers>
+        <comment>Crusade content</comment>
+      </selectionEntryGroup>
+      <selectionEntryGroup name="Codex Battle Traits" id="c765-ba7b-71b4-4bb6" hidden="false">
+        <comment>Crusade content</comment>
+      </selectionEntryGroup>
+      <selectionEntryGroup name="Codex Relics" id="9a61-74f5-f4f8-4d78" hidden="false">
+        <comment>Crusade content</comment>
+      </selectionEntryGroup>
+    </sharedSelectionEntryGroups>
+    <entryLinks>
+      <entryLink import="true" name="Brotherhood Champion" hidden="false" type="selectionEntry" id="b391-1ca8-ca39-ece7" targetId="2c81-4e74-8707-3117"/>
+      <entryLink import="true" name="Brotherhood Chaplain" hidden="false" type="selectionEntry" id="47d8-1a0a-e584-991" targetId="b9b1-d698-1e98-da45"/>
+      <entryLink import="true" name="Brotherhood Librarian" hidden="false" type="selectionEntry" id="eb42-25e1-cb7-81e0" targetId="5412-1f01-b7cc-bf12"/>
+      <entryLink import="true" name="Brotherhood Techmarine" hidden="false" type="selectionEntry" id="19bb-564d-866d-ff13" targetId="f667-5267-f241-37"/>
+      <entryLink import="true" name="Brotherhood Terminator Squad" hidden="false" type="selectionEntry" id="1462-a777-45ab-a8b5" targetId="a037-a89c-f59f-8b1e"/>
+      <entryLink import="true" name="Castellan Crowe" hidden="false" type="selectionEntry" id="5c7b-487d-a534-77bd" targetId="9ddb-760d-8cf7-1c8a"/>
+      <entryLink import="true" name="Grand Master" hidden="false" type="selectionEntry" id="a304-8dfa-851c-b53d" targetId="1a56-706b-a8f1-631a"/>
+      <entryLink import="true" name="Grand Master in Nemesis Dreadknight" hidden="false" type="selectionEntry" id="3066-9274-c887-86b" targetId="3625-f9f1-122b-bf9d"/>
+      <entryLink import="true" name="Grand Master Voldus" hidden="false" type="selectionEntry" id="e3ba-ed19-bc91-81ee" targetId="7256-bb3a-3e79-31fe"/>
+      <entryLink import="true" name="Grey Knights Land Raider" hidden="false" type="selectionEntry" id="99b4-6a62-b540-e864" targetId="512d-b972-911e-4cac"/>
+      <entryLink import="true" name="Grey Knights Land Raider Crusader" hidden="false" type="selectionEntry" id="ed2d-a39d-c9e1-7e2e" targetId="4c63-cca-8d26-6330"/>
+      <entryLink import="true" name="Grey Knights Land Raider Redeemer" hidden="false" type="selectionEntry" id="8d8f-b8f9-8344-ef40" targetId="ada7-eb0b-c920-d77f"/>
+      <entryLink import="true" name="Grey Knights Razorback" hidden="false" type="selectionEntry" id="9d6b-4332-27c3-c669" targetId="841f-98b-fbf3-c8ee"/>
+      <entryLink import="true" name="Grey Knights Rhino" hidden="false" type="selectionEntry" id="41e6-9a15-f40e-149f" targetId="5ffd-f698-a1bb-fba7"/>
+      <entryLink import="true" name="Grey Knights Stormhawk Interceptor" hidden="false" type="selectionEntry" id="6906-148b-2d4a-f6cd" targetId="fa-e288-2107-d22e"/>
+      <entryLink import="true" name="Grey Knights Stormraven Gunship" hidden="false" type="selectionEntry" id="9ad4-5c9e-4d7d-8ffd" targetId="2efe-459b-9562-e7a9"/>
+      <entryLink import="true" name="Grey Knights Stormtalon Gunship" hidden="false" type="selectionEntry" id="98a2-a561-b183-56a" targetId="84ac-b9ea-921f-9082"/>
+      <entryLink import="true" name="Grey Knights Venerable Dreadnought" hidden="false" type="selectionEntry" id="b24d-be83-c5fe-d3fc" targetId="bd43-b303-66e0-4c10"/>
+      <entryLink import="true" name="Interceptor Squad" hidden="false" type="selectionEntry" id="a53-5d6c-8148-4393" targetId="d9f7-71b7-8e67-7f44"/>
+      <entryLink import="true" name="Land Raider Banisher" hidden="false" type="selectionEntry" id="db7e-ce0-7ace-dc10" targetId="69d-a656-fde3-6c3e"/>
+      <entryLink import="true" name="Nemesis Dreadknight" hidden="false" type="selectionEntry" id="9342-1cf-b2ab-b143" targetId="5458-a458-c51d-c4e9"/>
+      <entryLink import="true" name="Paladin Squad" hidden="false" type="selectionEntry" id="1e9b-5681-eaf7-5e08" targetId="6528-4634-c2cf-2840"/>
+      <entryLink import="true" name="Grey Knights Thunderhawk Gunship" hidden="false" type="selectionEntry" id="b257-3749-9bb2-4d4d" targetId="8989-2fd2-4d29-e795"/>
+      <entryLink import="true" name="Purgation Squad" hidden="false" type="selectionEntry" id="8440-8405-d8ce-1592" targetId="e8ad-bd40-5952-6859"/>
+      <entryLink import="true" name="Purifier Squad" hidden="false" type="selectionEntry" id="9893-e746-2796-740" targetId="8865-df22-1629-bf02"/>
+      <entryLink import="true" name="Strike Squad" hidden="false" type="selectionEntry" id="45ef-125c-ae4f-394d" targetId="d81f-c9ac-e338-ba37"/>
+      <entryLink import="true" name="Detachment" hidden="false" type="selectionEntry" id="b859-7064-3a1e-1577" targetId="c05f-e67a-d2db-b3de"/>
+      <entryLink import="true" name="Grey Knights Relic Razorback [Legends]" hidden="false" type="selectionEntry" id="b234-2a9e-174d-90b3" targetId="54f0-4b3f-3abe-081b"/>
+      <entryLink import="true" name="Grey Knights Dreadnought [Legends]" hidden="false" type="selectionEntry" id="4bb5-c50e-a835-38d1" targetId="28d0-5a52-501a-441d"/>
+      <entryLink import="true" name="Show/Hide Options" hidden="false" type="selectionEntry" id="e4b-7fa2-e394-baff" targetId="e8ef-836a-a9d1-901d">
+        <entryLinks>
+          <entryLink import="true" name="Show Agents of the Imperium" hidden="false" type="selectionEntry" id="537-702c-e58c-86a3" targetId="e08b-2448-5606-fefb"/>
+          <entryLink import="true" name="Show Imperial Knights" hidden="false" type="selectionEntry" id="e981-3288-d103-387d" targetId="e82c-6f8c-2b97-a287"/>
+          <entryLink import="true" name="Show Titans" hidden="false" type="selectionEntry" id="e48a-8350-26a3-9971" targetId="f26b-79db-80e0-3a3b"/>
+        </entryLinks>
+      </entryLink>
+      <entryLink import="true" name="Order of Battle" hidden="false" id="6d55-7518-ff2e-b9f5" type="selectionEntry" targetId="eda7-8b4b-3719-af36"/>
+      <entryLink import="true" name="Brother-Captain" hidden="false" id="40a4-1786-686d-7735" targetId="dce9-6eb4-fa33-e869" type="selectionEntry"/>
+    </entryLinks>
+    <categoryEntries>
+      <categoryEntry name="Brother-Captain" hidden="false" id="71ac-a100-1ec8-14e9"/>
+      <categoryEntry name="Brother-Captain Stern" hidden="false" id="9e54-c14b-9ec9-e387"/>
+      <categoryEntry name="Brotherhood Champion" hidden="false" id="c427-b327-40a0-a401"/>
+      <categoryEntry name="Brotherhood Chaplain" hidden="false" id="ebf4-5ffe-19e7-c6c7"/>
+      <categoryEntry name="Brotherhood Librarian" hidden="false" id="bd80-12a6-cd23-96c9"/>
+      <categoryEntry name="Brotherhood Techmarine" hidden="false" id="c352-657f-d2cc-adcf"/>
+      <categoryEntry name="Brotherhood Terminator Squad" hidden="false" id="cddf-ac1-4a0d-8e48"/>
+      <categoryEntry name="Castellan Crowe" hidden="false" id="de95-1b68-44cf-7ca9"/>
+      <categoryEntry name="Grand Master" hidden="false" id="ce31-227c-65ca-e27e"/>
+      <categoryEntry name="Grand Master in Nemesis Dreadknight" hidden="false" id="a738-1a96-db57-ba6f"/>
+      <categoryEntry name="Grand Master Voldus" hidden="false" id="472c-f807-880-b6"/>
+      <categoryEntry name="Grey Knights Land Raider" hidden="false" id="adfb-534b-3eb7-2781"/>
+      <categoryEntry name="Grey Knights Land Raider Crusader" hidden="false" id="4a04-1f1b-8ffb-b183"/>
+      <categoryEntry name="Grey Knights Land Raider Redeemer" hidden="false" id="51dd-461e-1657-1017"/>
+      <categoryEntry name="Grey Knights Razorback" hidden="false" id="88ad-5f29-ba09-9427"/>
+      <categoryEntry name="Grey Knights Rhino" hidden="false" id="5ced-f445-91c2-a55e"/>
+      <categoryEntry name="Grey Knights Stormhawk Interceptor" hidden="false" id="82f-4771-c58e-1755"/>
+      <categoryEntry name="Grey Knights Stormraven Gunship" hidden="false" id="54b8-5bba-f749-e5ef"/>
+      <categoryEntry name="Grey Knights Stormtalon Gunship" hidden="false" id="99eb-b003-79ba-7d46"/>
+      <categoryEntry name="Grey Knights Thunderhawk Gunship" hidden="false" id="f580-2968-19f3-1320"/>
+      <categoryEntry name="Grey Knights Venerable Dreadnought" hidden="false" id="33d4-b50a-18e8-16e8"/>
+      <categoryEntry name="Interceptor Squad" hidden="false" id="b7d3-6b00-c657-ebd7"/>
+      <categoryEntry name="Kaldor Draigo" hidden="false" id="77b6-bfe8-648b-9fb4"/>
+      <categoryEntry name="Land Raider Banisher" hidden="false" id="3741-4bcf-f67e-1942"/>
+      <categoryEntry name="Nemesis Dreadknight" hidden="false" id="8083-7b7a-c9d7-fd31"/>
+      <categoryEntry name="Paladin Squad" hidden="false" id="9020-9fb5-8ef8-5ad4"/>
+      <categoryEntry name="Purgation Squad" hidden="false" id="8084-5bdd-7c6-bae4"/>
+      <categoryEntry name="Purifier Squad" hidden="false" id="67f8-444-b8b7-ad0"/>
+      <categoryEntry name="Servitors" hidden="false" id="5bc8-a8b7-1c69-9043"/>
+      <categoryEntry name="Strike Squad" hidden="false" id="103f-a8cd-8c1f-24df"/>
+      <categoryEntry id="4c57-a2d1-fe45-4ec1" name="Grey Knights Dreadnought [Legends]" hidden="false"/>
+      <categoryEntry id="6ee2-b8d8-f50b-67e3" name="Grey Knights Relic Razorback [Legends]" hidden="false"/>
+    </categoryEntries>
+    <sharedProfiles>
+      <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="df6-e949-835b-ad0d">
+        <characteristics>
+          <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 4+ invulnerable save.</characteristic>
+        </characteristics>
+        <comment>4+ Single model</comment>
+      </profile>
+      <profile name="Invulnerable Save (4+)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a343-738-c273-4e13">
+        <characteristics>
+          <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has a 4+ Invulnerable Save</characteristic>
+        </characteristics>
+        <comment>4+ Unit</comment>
+      </profile>
+    </sharedProfiles>
+    <rules>
+      <rule name="Gate of Infinity" id="6a5e-1316-2d87-93c5" hidden="false">
+        <description>If your Army Faction is **^^Grey Knights^^**, at the end of your opponent’s Fight phase, you can select a number of units from your army that are on the battlefield (excluding units that are within Engagement Range of one or more enemy units). The maximum number of units you can select depends on the battle size, as follows:
 
 Incursion - Up to 2 units
 Strike Force - Up to 3 units
 Onslaught - Up to 4 units
 
 Once you have made your selections, remove those units from the battlefield and place them into Strategic Reserves.</description>
-                  </rule>
-                </rules>
-              </catalogue>
+      </rule>
+    </rules>
+  </catalogue>
