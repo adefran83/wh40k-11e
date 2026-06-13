@@ -7650,9 +7650,9 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
                 <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="TOME OF FORBIDDEN WAYS" hidden="false" id="55d4-c085-d06a-eec3">
+            <selectionEntry type="upgrade" import="true" name="PSYCHIC CELERITY" hidden="false" id="e6c3-1d9b-4a5f-7e2c">
               <profiles>
-                <profile name="TOME OF FORBIDDEN WAYS" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dde5-f2d2-a6cf-a9e7">
+                <profile name="PSYCHIC CELERITY" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f1b8-7e2d-3c9a-5f4b">
                   <characteristics>
                     <characteristic name="Description" typeId="9b8f-694b-e5e-b573">GREY KNIGHTS model only. While the bearer is on the battlefield or in Strategic Reserves, add 1 to the number of units from your army that you can select for the Gate of Infinity rule.</characteristic>
                   </characteristics>
@@ -7663,15 +7663,15 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="55d4-c085-d06a-eec3" shared="true" includeChildForces="true" includeChildSelections="true"/>
-                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="55d4-c085-d06a-eec3" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="e6c3-1d9b-4a5f-7e2c" shared="true" includeChildForces="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
                 <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
                 <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
                 <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -7684,8 +7684,9 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="cac3-71d1-ea4b-795d" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="2754-4ada-b9fd-702f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="9020-9fb5-8ef8-5ad4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="8084-5bdd-7c6-bae4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="roster" childId="acd1-169d-85a6-95fc" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
