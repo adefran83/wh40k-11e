@@ -4629,6 +4629,8 @@
         <constraint type="min" value="0" field="716d-91b7-d55a-1022" scope="self" shared="true" id="dd39-6def-3e5c-2095" includeChildSelections="true"/>
       </constraints>
       <entryLinks>
+
+        <entryLink import="true" name="Enhancements" hidden="false" type="selectionEntryGroup" id="b3e7-9c1a-5d8f-2b4e" targetId="c440-b056-f09a-c88a" sortIndex="3"/>
         <entryLink import="true" name="Crusade" hidden="false" id="6516-bb08-4fbb-b1be" type="selectionEntryGroup" targetId="1f2e-4c6b-19f2-30e0" sortIndex="1"/>
       </entryLinks>
       <modifierGroups>
@@ -8061,6 +8063,7 @@ have the [LETHAL HITS] ability.</description>
             <rules>
               <rule name="Argent Assault + Fire of Purgation" id="acd1-169d-85a6-95fc" hidden="false">
                 <description>When a friendly PALADIN SQUAD unit is selected to fight, if the S of those attacks is lower than the T of the target, those attacks have +1 to wound rolls.
+
 When you select a unit to be pinned by a friendly PURGATION SQUAD unit’s Righteous Persecution ability, that enemy unit makes a battle‑shock roll, with -1 to that battle‑shock roll.</description>
               </rule>
             </rules>
