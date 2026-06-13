@@ -7686,8 +7686,7 @@ and until the end of the turn, the bearer&apos;s unit is not eligible to declar
                 <conditionGroups>
                   <conditionGroup type="and">
                     <conditions>
-                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="9020-9fb5-8ef8-5ad4" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="8084-5bdd-7c6-bae4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                      <condition type="lessThan" value="1" field="selections" scope="roster" childId="d564-3284-bf44-b873" shared="true" includeChildSelections="true" includeChildForces="true"/>
                       <condition type="lessThan" value="1" field="selections" scope="roster" childId="acd1-169d-85a6-95fc" shared="true" includeChildSelections="true" includeChildForces="true"/>
                     </conditions>
                   </conditionGroup>
